@@ -5,13 +5,16 @@ import payment from "../assets/payment.png";
 import wallet from "../assets/wallet.png";
 import bankDeposit from "../assets/bankDeposit.png";
 import SectionHeader from "./SectionHeader";
-import { SectionParagraph } from "./SectionParagraph";
+import SectionParagraph from "./SectionParagraph";
 import PrimaryBtn from "./PrimaryBtn";
 import SectionTitle from "./SectionTitle";
 
 const Services = () => {
   return (
-    <div className="bg-white text-black lg:px-52 md:px-14 px-5 pt-14 pb-24">
+    <div
+      id="Services"
+      className="bg-white text-black lg:px-52 md:px-14 px-5 pt-14 pb-24"
+    >
       <div className="md:flex w-full justify-between ">
         <div className="md:w-[40%] py-6 text-center md:text-start md:mr-14 md:mt-32 lg:mt-24 xxl:mt-20">
           <SectionTitle title="Our Services" />
@@ -22,7 +25,7 @@ const Services = () => {
             ipsam consequatur dolores, sed eligendi id animi ipsum neque
             deserunt! Iste, et!"
           />
-          <PrimaryBtn name="Join Now" />
+          {/* <PrimaryBtn name="Join Now" /> */}
         </div>
         <div
           data-aos="flip-left"

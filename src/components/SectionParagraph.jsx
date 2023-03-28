@@ -1,11 +1,13 @@
 import React from "react";
 
-export const SectionParagraph = ({ content, className }) => {
+const SectionParagraph = ({ content, className }) => {
   return (
     <p
-      className={`leading-6 text-sm md:text-lg text-gray-400 mb-2 ${className}`}
+      className={`leading-6 text-sm md:text-lg text-gray-600 mb-4 ${className}`}
     >
       {content}
     </p>
   );
 };
+
+export default SectionParagraph;

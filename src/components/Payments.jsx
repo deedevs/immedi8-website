@@ -16,12 +16,14 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 import PaymentLogo from "./PaymentLogo";
 
-const Testimonial = () => {
+const Payments = ({ className }) => {
   return (
     <div
-      id="Testimonial"
-      className="bg-white text-[#1c2e4a] w-[60%] h-auto mx-auto p-8 shadow-lg shadow-[#1c2e4a]"
+      className={`bg-white text-[#1c2e4a] w-[80%] md:w-[70%] lg:w-[60%] h-auto mx-auto p-8 shadow-lg shadow-[#1c2e4a] absolute ${className}`}
     >
+      <h4 className="pb-5 text-2xl text-red-600 lg:text-3xl font-bold text-center">
+        We Accept
+      </h4>
       <Swiper
         slidesPerView={"4"}
         spaceBetween={50}
@@ -64,4 +66,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
+export default Payments;

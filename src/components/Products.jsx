@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
-import { SectionParagraph } from "./SectionParagraph";
+import SectionParagraph from "./SectionParagraph";
 import SectionTitle from "./SectionTitle";
 import iMoney from "../assets/iMoney.png";
 import iPay from "../assets/iPay.png";
@@ -12,13 +12,20 @@ import Card from "./ProductCard";
 
 const Products = () => {
   return (
-    <div className="bg-[#1c2e4a] text-white lg:px-52 md:px-14 px-5 pt-14 pb-24">
+    <div
+      id="Products"
+      className="bg-[#1c2e4a] text-white lg:px-52 md:px-14 px-5 pt-14 pb-24"
+    >
       <div className="text-center w-2/3 mx-auto">
         <SectionTitle title="Our Products" />
-        <SectionHeader heading="Meet our Products" />
-        <SectionParagraph content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sequi voluptatem nulla modi nemo explicabo voluptates. Voluptatibus, fugit velit, ipsa cumque alias ipsum magnam sed voluptas, ea tempora mollitia quia?" />
+        <p className="text-gray-400 leading-6 text-sm md:text-lg mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+          sequi voluptatem nulla modi nemo explicabo voluptates. Voluptatibus,
+          fugit velit, ipsa cumque alias ipsum magnam sed voluptas, ea tempora
+          mollitia quia?
+        </p>
       </div>
-      <div className="space-y-5 md:space-y-0 md:grid gap-10 md:grid-cols-2 md:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2 pt-16">
+      <div className="space-y-5 md:space-y-0 md:grid gap-10 md:grid-cols-2 md:grid-rows-2 xl:grid-cols-3 xl:grid-rows-1 pt-16">
         <Card
           image={iMoney}
           title="Money Transfer"
@@ -35,7 +42,7 @@ const Products = () => {
           title="Foreign Exchange Services"
           description="Foreign Currency at an unbeatable price. no more worries, Deal on the spot or Hedge for your preferable Rate/Date. online or Call us."
         />
-        <Card
+        {/* <Card
           image={iLoan}
           title="Quick Loans"
           description="Quick accessible Loan for your everyday need. take a quick short-term loan at very low fees and no guarantees required."
@@ -44,7 +51,7 @@ const Products = () => {
           image={iWallet}
           title="Mobile Wallet"
           description="Mobile Wallet for all your transaction. the 21st Century is the Era of Technology. No one needs to carry cash or a physical wallet anymore. Sign up on our digital wallet(I-Wallet) on all your devices to save your cash, and execute your transactions"
-        />
+        /> */}
       </div>
     </div>
   );

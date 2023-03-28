@@ -1,0 +1,8 @@
+.active {
+  color: red;
+}
+.header {
+  background: url("./assets/heroBg.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+}

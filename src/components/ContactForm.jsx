@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import PrimaryBtn from "./PrimaryBtn";
+import Input from "./Input";
+import InputLabel from "./InputLabel";
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -12,65 +13,30 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full bg-transparent space-y-5">
+    <form
+      onSubmit={handleSubmit}
+      className="w-full bg-transparent space-y-5 shadow-md rounded p-6"
+    >
       <div>
-        <label
-          htmlFor="name"
-          className="block mb-2 font-medium uppercase w-full text-left cursor-pointer"
-        >
-          Name
-        </label>
-        <input
-          type="text"
-          className="w-full border-1 border-gray-300 rounded p-3 text-base text-[#1c2e4a]"
-          id="name"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-        />
+        <InputLabel labelFor="name" name="name" />
+        <Input type="text" id="name" state={name} setState={setName} />
       </div>
 
       <div>
-        <label
-          htmlFor="phone"
-          className="block mb-2 font-medium uppercase w-full text-left cursor-pointer"
-        >
-          Telephone Number:
-        </label>
-        <input
-          type="tel"
-          className="w-full border-1 border-gray-300 rounded p-3 text-base text-[#1c2e4a]"
-          id="phone"
-          value={phone}
-          onChange={(event) => setPhone(event.target.value)}
-        />
+        <InputLabel labelFor="phone" name="telephone number" />
+        <Input type="text" id="phone" state={phone} setState={setPhone} />
       </div>
 
       <div>
-        <label
-          htmlFor="email"
-          className="block mb-2 font-medium uppercase w-full text-left cursor-pointer"
-        >
-          Email:
-        </label>
-        <input
-          type="email"
-          className="w-full border-1 border-gray-300 rounded text-base p-3 text-[#1c2e4a]"
-          id="email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-        />
+        <InputLabel labelFor="email" name="email" />
+        <Input type="email" id="email" state={email} setState={setEmail} />
       </div>
 
       <div>
-        <label
-          htmlFor="comment"
-          className="block mb-2 font-medium uppercase w-full text-left cursor-pointer"
-        >
-          Comment
-        </label>
+        <InputLabel labelFor="comment" name="Comment or Message" />
         <textarea
           id="comment"
-          className="w-full border-1 border-gray-300 rounded text-base p-5 text-[#1c2e4a]"
+          className="w-full border border-gray-300 rounded text-base p-5 text-[#1c2e4a] outline-none"
           value={comment}
           onChange={(event) => setComment(event.target.value)}
         ></textarea>
@@ -79,7 +45,7 @@ function ContactForm() {
       <div className="w-full">
         <button
           type="submit"
-          className="w-full py-3 text-base uppercase rounded-md bg-red-600  text-white font-medium hover:bg-white hover:text-black"
+          className="w-full py-3 text-base uppercase rounded-md bg-red-600  text-white font-medium hover:bg-white hover:border hover:border-red-600 hover:text-black"
         >
           submit
         </button>
