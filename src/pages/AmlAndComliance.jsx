@@ -1,10 +1,11 @@
-import React from "react";
-import Footer from "../components/Footer";
-import GoToTop from "../components/GoToTop";
+import React, { useEffect } from "react";
 import HeroSecondary from "../components/HeroSecondary";
 import SectionParagraph from "../components/SectionParagraph";
 
 const ComplaintPolicy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const items = [
     "Client Profiling.",
     "Risk Assessment.",
@@ -56,41 +57,7 @@ const ComplaintPolicy = () => {
             </li>
           ))}
         </ul>
-
-        <h4 className="text-sm md:text-lg uppercase">
-          5. If The customer is still unhappy.
-        </h4>
-
-        <SectionParagraph content="Our aim is to resolve all complaints fairly and promptly. However, in the unlikely event that the matter is still not resolved to the customer’s satisfaction, or if 8 weeks passed since you first brought your complaint to our attention, you have the right to refer your complaint to the Financial Ombudsman Service. If you want the Financial Ombudsman Service to look into your complaint, you must contact them within six months of the date of any final response issued. You can write to them at:" />
-        <SectionParagraph content="The Financial Ombudsman Services" />
-        <div className="leading-6 text-sm md:text-lg text-gray-600 mb-4">
-          <h4>Company: IMMEDI8 SERVICES LTD.</h4>
-          <h4>
-            South Quays Plaza <br />
-            183 Marsh Wall
-            <br /> London E14 9SR
-          </h4>
-          <h4>Email: complaint.info@financial-ombudsman.org.uk</h4>
-          <h4>
-            Website:{" "}
-            <a
-              className="text-blue-500 visited:text-blue-800"
-              href="www.financial-ombudsman.org.uk"
-            >
-              www.financial-ombudsman.org.uk
-            </a>
-          </h4>
-        </div>
-        <SectionParagraph content="The Financial Ombudsman Service (FOS) will only consider your complaint once you tried to resolve it with us, so please first raise your concerns with us and we’ll do all we can to help. Customers from countries other than the UK may have another local ombudsman or different out of court and redress procedures." />
-        <h4 className="text-sm md:text-lg uppercase">6. Responsibility</h4>
-        <SectionParagraph content="The Quality Assurance Manager is responsible for ensuring that all customer complaints are dealt with promptly, fairly and consistently and in accordance with this procedure. The investigating manager is responsible for conducting a full, documented, investigation and providing a written response to the Quality Assurance Manager" />
-        <SectionParagraph content="This procedure was reviewed and revised January 2012" />
-        <p className="leading-6 text-sm md:text-lg text-gray-600 mb-4">
-          Signed: Fatou Ceesay <br /> Date: 31st January 2018 <br /> Position:
-          Director{" "}
-        </p>
       </div>
-      <Footer />
     </div>
   );
 };

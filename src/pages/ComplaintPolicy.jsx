@@ -1,19 +1,11 @@
-import React from "react";
-import Footer from "../components/Footer";
-import GoToTop from "../components/GoToTop";
+import React, { useEffect } from "react";
 import HeroSecondary from "../components/HeroSecondary";
 import SectionParagraph from "../components/SectionParagraph";
 
 const ComplaintPolicy = () => {
-  const items = [
-    "Client Profiling.",
-    "Risk Assessment.",
-    "Client Identification Controls & Validations.",
-    "Transaction Aggregation Thresholds.",
-    "Government Reporting Controls & Validations.",
-    "Possible Structuring Reporting.",
-    "Enhanced Due Diligence Reporting.",
-  ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div id="complaint-policy">
       <HeroSecondary heading="Complaints Procedure" date="March 27, 2023" />
@@ -97,7 +89,6 @@ const ComplaintPolicy = () => {
           Director{" "}
         </p>
       </div>
-      <Footer />
     </div>
   );
 };

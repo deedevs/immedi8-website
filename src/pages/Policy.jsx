@@ -1,9 +1,11 @@
-import React from "react";
-import Footer from "../components/Footer";
+import React, { useEffect } from "react";
 import HeroSecondary from "../components/HeroSecondary";
 import SectionParagraph from "../components/SectionParagraph";
 
 const Policy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div id="policy">
       <HeroSecondary heading="Our Policies" date="March 27, 2023" />
@@ -25,7 +27,6 @@ const Policy = () => {
           all goverments regulations at all times."
         />
       </div>
-      <Footer />
     </div>
   );
 };

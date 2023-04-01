@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TermsAccordion from "../components/TermsAccordion";
-import Footer from "../components/Footer";
 import HeroSecondary from "../components/HeroSecondary";
 import SectionParagraph from "../components/SectionParagraph";
 import PrivacyContactList from "../components/PrivacyContactList";
-import GoToTop from "../components/GoToTop";
 
 const Privacy = () => {
   const items = [
@@ -313,6 +311,9 @@ const Privacy = () => {
       content: <PrivacyContactList />,
     },
   ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div id="privacy">
       <HeroSecondary heading="Privacy Statement" date="March 27, 2023" />
@@ -322,7 +323,6 @@ const Privacy = () => {
 
         <TermsAccordion items={items} />
       </div>
-      <Footer />
     </div>
   );
 };

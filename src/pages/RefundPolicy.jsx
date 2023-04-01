@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SectionParagraph from "../components/SectionParagraph";
 import HeroSecondary from "../components/HeroSecondary";
-import Footer from "../components/Footer";
 
 const RefundPolicy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div id="refund-policy">
       <HeroSecondary heading="Refund Policy" date="March 27, 2023" />
@@ -35,7 +37,6 @@ const RefundPolicy = () => {
           request from the Sender.
         </p>
       </div>
-      <Footer />
     </div>
   );
 };

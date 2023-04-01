@@ -9,6 +9,7 @@ const Header = () => {
       className="header bg-no-repeat bg-cover bg-blend-overlay bg-center h-3/4 pb-36 relative"
       id="Home"
     >
+      <NavBar />
       <Hero />
       <Payments
         className={

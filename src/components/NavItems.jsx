@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import LoginBtn from "./LoginBtn";
 
-const NavItems = ({ className }) => {
-  const navItems = ["Home", "About", "Services", "Contact"];
-
+const NavItems = ({ className, items }) => {
   return (
     <ul className={className}>
-      {navItems.map((item) => (
-        <li key={item} className="ml-5 cursor-pointer">
+      {items.map((item, index) => (
+        <li key={index} className="ml-5 cursor-pointer">
           <Link
-            to={item}
+            to={item.to}
             activeClass="active"
             spy={true}
             smooth={true}
@@ -18,7 +16,7 @@ const NavItems = ({ className }) => {
             duration={1000}
             className="hover:text-red-600 font-medium"
           >
-            {item}
+            {item.name}
           </Link>
         </li>
       ))}

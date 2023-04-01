@@ -23,12 +23,18 @@ const Hero = () => {
             </h4>
             <div className="md:flex items-center space-y-6 md:space-y-0">
               <div className="w-[150px] mx-auto md:mx-0">
-                <a href="#">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.immedi8moneymt"
+                  target="_blank"
+                >
                   <img src={android} alt="Download Button" />
                 </a>
               </div>
               <div className="md:ml-8 w-[150px] mx-auto md:mx-0">
-                <a href="#">
+                <a
+                  href="https://apps.apple.com/us/app/imoney-money-transfer/id6446627721"
+                  target="_blank"
+                >
                   <img src={iOS} alt="Download Button" />
                 </a>
               </div>
