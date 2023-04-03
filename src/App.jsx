@@ -13,6 +13,10 @@ import "aos/dist/aos.css";
 
 import ReactGA from "react-ga";
 
+const TRACKING_ID = "G-JTTSGCCD1B";
+
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -24,6 +28,10 @@ function App() {
       disable: "mobile",
     });
     ReactGA.pageview(window.location.pathname);
+    ReactGA.event({
+      category: "User",
+      action: "Created an Account",
+    });
   }, []);
   return (
     <div className="w-full overflow-x-hidden font-poppins">
