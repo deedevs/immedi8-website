@@ -11,6 +11,8 @@ import FAQ from "./components/FAQ";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import ReactGA from "react-ga";
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -21,6 +23,7 @@ function App() {
       startEvent: "scroll",
       disable: "mobile",
     });
+    ReactGA.pageview(window.location.pathname);
   }, []);
   return (
     <div className="w-full overflow-x-hidden font-poppins">
