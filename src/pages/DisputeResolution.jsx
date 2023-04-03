@@ -1,10 +1,11 @@
-import React from "react";
-import Footer from "../components/Footer";
-import GoToTop from "../components/GoToTop";
+import React, { useEffect } from "react";
 import HeroSecondary from "../components/HeroSecondary";
 import SectionParagraph from "../components/SectionParagraph";
 
 const DisputeResolution = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div id="dispute-resolution">
       <HeroSecondary heading="Dispute Resolution" date="March 27, 2023" />
@@ -42,8 +43,6 @@ const DisputeResolution = () => {
           TO THIS MONEY TRANSFER
         </p>
       </div>
-      <GoToTop />
-      <Footer />
     </div>
   );
 };

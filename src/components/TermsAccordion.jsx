@@ -33,7 +33,7 @@ const TermsAccordion = ({ items }) => {
             </svg>
           </button>
           <div
-            className={`p-4 text-left text-gray-600 text-lg ${
+            className={`p-4 text-left text-sm md:text-lg text-gray-600 ${
               activeIndex !== index ? "hidden" : ""
             }`}
           >

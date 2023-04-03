@@ -2,15 +2,22 @@ import React, { useState, useEffect, useRef } from "react";
 import LoginBtn from "./LoginBtn";
 import Logo from "./Logo";
 import NavItems from "./NavItems";
+import "../App";
 
 const NavBar = () => {
+  const navItems = [
+    { name: "Home", to: "Home" },
+    { name: "About", to: "About" },
+    { name: "Services", to: "Services" },
+    { name: "Contact", to: "Contact" },
+  ];
   const [open, setOpen] = useState(false);
   const [bgState, setBgState] = useState("black");
 
   const nav = useRef();
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset >= nav.current.offsetHeight) {
+      if (nav.current && window.pageYOffset >= nav.current.offsetHeight) {
         nav.current.classList.add(
           "bg-white",
           "fixed",
@@ -19,7 +26,7 @@ const NavBar = () => {
           "z-[100]"
         );
         setBgState("white");
-      } else {
+      } else if (nav.current && window.pageYOffset < nav.current.offsetHeight) {
         nav.current.classList.remove(
           "bg-white",
           "fixed",
@@ -35,7 +42,7 @@ const NavBar = () => {
   return (
     <nav
       ref={nav}
-      className="bg-gradient-to-t from-[#1c2e4a] to-black bg-blend-overlay py-5 md:px-14 px-5 bg-transparent text-white shadow-md block"
+      className="bg-blend-overlay py-5 md:px-14 px-5 bg-transparent text-white shadow-md block"
     >
       <div className="md:flex items-center justify-between">
         <Logo />
@@ -51,7 +58,8 @@ const NavBar = () => {
         </div>
 
         <NavItems
-          className={`xl:flex xl:items-center xl:space-x-5 xl:space-y-0 space-y-4 text-xl
+          items={navItems}
+          className={` xl:flex xl:items-center xl:space-x-5 xl:space-y-0 space-y-4 text-xl
          xl:pb-0 pb-5 xl:pt-0 pt-8 absolute xl:static xl:z-10 z-[1] left-0 w-full xl:w-auto xl:pl-0 pl-9 xl:mt-0 xl:bg-inherit  transition-all duration-500 ease-in ${
            open ? "top-[140px] opacity-100 z-[1]" : "top-[-490px]"
          } ${

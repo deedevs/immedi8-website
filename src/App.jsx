@@ -6,9 +6,7 @@ import Products from "./components/Products";
 import Contact from "./components/Contact";
 import Regulators from "./components/Regulators";
 import Testimonial from "./components/Testimonial";
-import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
-import { Outlet } from "react-router-dom";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -42,7 +42,7 @@ const Products = () => {
           title="Foreign Exchange Services"
           description="Foreign Currency at an unbeatable price. no more worries, Deal on the spot or Hedge for your preferable Rate/Date. online or Call us."
         />
-        {/* <Card
+        <Card
           image={iLoan}
           title="Quick Loans"
           description="Quick accessible Loan for your everyday need. take a quick short-term loan at very low fees and no guarantees required."
@@ -51,7 +51,7 @@ const Products = () => {
           image={iWallet}
           title="Mobile Wallet"
           description="Mobile Wallet for all your transaction. the 21st Century is the Era of Technology. No one needs to carry cash or a physical wallet anymore. Sign up on our digital wallet(I-Wallet) on all your devices to save your cash, and execute your transactions"
-        /> */}
+        />
       </div>
     </div>
   );

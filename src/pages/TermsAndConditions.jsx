@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TermsAccordion from "../components/TermsAccordion";
-import Footer from "../components/Footer";
 import HeroSecondary from "../components/HeroSecondary";
 import SectionParagraph from "../components/SectionParagraph";
-import GoToTop from "../components/GoToTop";
 
 const TermsAndConditions = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const items = [
     {
       title: "FEES, PAYMENT AND CURRENCY EXCHANGE",
@@ -84,7 +85,6 @@ const TermsAndConditions = () => {
           </p>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
