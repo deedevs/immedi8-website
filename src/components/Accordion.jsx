@@ -13,7 +13,7 @@ const Accordion = ({ items }) => {
         <div key={index} className=" border-b border-gray-300 rounded">
           <button
             type="button"
-            className={`w-full mt-0 px-6 py-8 text-3xl flex justify-between items-center focus:outline-none hover:bg-gradient-to-r from-[#0e3169] to-[#1c2e4a] hover:text-gray-300 ${
+            className={`w-full mt-0 px-6 py-8 text-xl lg:text-2xl flex justify-between items-center focus:outline-none hover:bg-gradient-to-r from-[#0e3169] to-[#1c2e4a] hover:text-gray-300 ${
               activeIndex === index ? "bg-[#142237]" : ""
             }`}
             onClick={() => handleClick(index)}
