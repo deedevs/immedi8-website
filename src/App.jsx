@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 
 import ReactGA from "react-ga";
 
-const TRACKING_ID = "G-JTTSGCCD1B";
+const TRACKING_ID = "UA-261835404-1";
 
 ReactGA.initialize(TRACKING_ID);
 
