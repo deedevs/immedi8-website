@@ -17,6 +17,7 @@ import youtube from "../assets/youtube.png";
 import mail from "../assets/mail.jpg";
 import ContactForm from "./ContactForm";
 import Map from "./Map";
+import ContectForm from "./ContectForm";
 
 const Contact = () => {
   return (
@@ -66,6 +67,7 @@ const Contact = () => {
 
           <div className="w-full p-8 pr-0">
             <ContactForm />
+            {/* <ContectForm /> */}
           </div>
         </div>
       </div>
