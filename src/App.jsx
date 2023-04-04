@@ -28,10 +28,6 @@ function App() {
       disable: "mobile",
     });
     ReactGA.pageview(window.location.pathname);
-    ReactGA.event({
-      category: "User",
-      action: "Created an Account",
-    });
   }, []);
   return (
     <div className="w-full overflow-x-hidden font-poppins">

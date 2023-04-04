@@ -2,8 +2,15 @@ import React from "react";
 import Form from "./Form";
 import android from "../assets/android.jpg";
 import iOS from "../assets/iOS.jpg";
+import ReactGA from "react-ga";
 
 const Hero = () => {
+  const handleEvent = (event) => {
+    ReactGA.event({
+      category: event.category,
+      action: event.action,
+    });
+  };
   return (
     <div className=" lg:px-52 md:px-14 px-5 py-8 h-full">
       <div className="md:flex w-full md:gap-x-24">
@@ -26,6 +33,12 @@ const Hero = () => {
                 <a
                   href="https://play.google.com/store/apps/details?id=com.immedi8moneymt"
                   target="_blank"
+                  onClick={() =>
+                    handleEvent({
+                      category: "playstore",
+                      action: "User clicked playstore download button",
+                    })
+                  }
                 >
                   <img src={android} alt="Download Button" />
                 </a>
