@@ -19,12 +19,12 @@ const Services = () => {
         <div className="md:w-[40%] py-6 text-center md:text-start md:mr-14 md:mt-32 lg:mt-24 xxl:mt-20">
           <SectionTitle title="Our Services" />
           <SectionHeader heading="Immedi8 Financial Services" />
-          <SectionParagraph
+          {/* <SectionParagraph
             content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
             iusto quasi, a iure reprehenderit illum voluptatum accusantium eaque
             ipsam consequatur dolores, sed eligendi id animi ipsum neque
             deserunt! Iste, et!"
-          />
+          /> */}
           {/* <PrimaryBtn name="Join Now" /> */}
         </div>
         <div

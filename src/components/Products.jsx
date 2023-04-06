@@ -1,8 +1,7 @@
 import React from "react";
-import SectionHeader from "./SectionHeader";
-import SectionParagraph from "./SectionParagraph";
 import SectionTitle from "./SectionTitle";
-import iMoney from "../assets/iMoney.png";
+import imoney from "../assets/imoney.png";
+import logo from "../assets/logo.png";
 import iPay from "../assets/iPay.png";
 import iFx from "../assets/iFx.png";
 import iLoan from "../assets/iLoan.png";
@@ -18,16 +17,10 @@ const Products = () => {
     >
       <div className="text-center w-2/3 mx-auto">
         <SectionTitle title="Our Products" />
-        <p className="text-gray-400 leading-6 text-sm md:text-lg mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
-          sequi voluptatem nulla modi nemo explicabo voluptates. Voluptatibus,
-          fugit velit, ipsa cumque alias ipsum magnam sed voluptas, ea tempora
-          mollitia quia?
-        </p>
       </div>
       <div className="space-y-5 md:space-y-0 md:grid gap-10 md:grid-cols-2 md:grid-rows-2 xl:grid-cols-3 xl:grid-rows-1 pt-16">
         <Card
-          image={iMoney}
+          image={imoney}
           title="Money Transfer"
           description="Fast, Secure, Simple & Reliable Money Transfer Services across the Globe. In Over 190 Countries. Send & Receive with us today. You will join the Testimonies."
         />

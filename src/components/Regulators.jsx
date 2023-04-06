@@ -16,8 +16,9 @@ const Regulators = () => {
 
           <p className="text-gray-400 leading-6 text-sm md:text-lg mb-4">
             Authorize By the Financial Services Authority, under the Payment
-            Services Regulation 2009. PSD 584027 for the Provision of Payment
-            Services.
+            Services Regulation 2009.
+            <span className="text-red-600"> PSD 584027</span> for the Provision
+            of Payment Services.
           </p>
 
           <p className="leading-6 text-sm md:text-lg text-gray-400 mb-4 ">
@@ -28,7 +29,7 @@ const Regulators = () => {
           <p className="text-gray-400 leading-6 text-sm md:text-lg mb-4">
             Registered With Uk Information Commissioner (ICO) for Data
             Protection. Bound by Data Protection Act 1998, Registration Number
-            Z2158030
+            <span className="text-red-600"> Z2158030</span>
           </p>
           <p className="text-gray-400 leading-6 text-sm md:text-lg mb-4">
             Regulated and Authorized By the Central Bank of the Gambia
