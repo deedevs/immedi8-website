@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
-import imoney from "../assets/imoney.png";
+// import imoney from "../assets/imoney.png";
 import logo from "../assets/logo.png";
 import iPay from "../assets/iPay.png";
 import iFx from "../assets/iFx.png";
@@ -20,7 +20,7 @@ const Products = () => {
       </div>
       <div className="space-y-5 md:space-y-0 md:grid gap-10 md:grid-cols-2 md:grid-rows-2 xl:grid-cols-3 xl:grid-rows-1 pt-16">
         <Card
-          image={imoney}
+          image={logo}
           title="Money Transfer"
           description="Fast, Secure, Simple & Reliable Money Transfer Services across the Globe. In Over 190 Countries. Send & Receive with us today. You will join the Testimonies."
         />

@@ -2,7 +2,7 @@ import React from "react";
 
 const LoginBtn = ({ className }) => {
   return (
-    <>
+    <div>
       <a
         href="https://imoneycli.immedi8money.com"
         target="_blank"
@@ -10,7 +10,7 @@ const LoginBtn = ({ className }) => {
       >
         <button>Login</button>
       </a>
-    </>
+    </div>
   );
 };
 

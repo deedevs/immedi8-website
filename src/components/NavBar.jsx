@@ -66,7 +66,7 @@ const NavBar = () => {
             bgState === "white" ? "bg-white text-black" : "bg-black text-white"
           }`}
         />
-        <LoginBtn className="hidden xl:block" />
+        <LoginBtn className="hidden xl:block mt-4" />
       </div>
     </nav>
   );
