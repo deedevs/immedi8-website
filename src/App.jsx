@@ -11,6 +11,12 @@ import FAQ from "./components/FAQ";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "UA-261835404-1";
+
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -21,6 +27,7 @@ function App() {
       startEvent: "scroll",
       disable: "mobile",
     });
+    ReactGA.pageview(window.location.pathname);
   }, []);
   return (
     <div className="w-full overflow-x-hidden font-poppins">
