@@ -27,7 +27,6 @@ const Testimonial = () => {
       <div className="w-3/4 mx-auto">
         <SectionTitle title="Client Opinion" />
         <SectionHeader heading="What Users Say About Us" />
-        <SectionParagraph content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempora ipsum aperiam, quibusdam atque aut voluptatem nostrum architecto inventore temporibus iste harum sint sit beatae accusamus tempore officia unde consectetur adipisicing elit. Numquam, tempora ipsum aperiam, quibusdam atque aut voluptatem consectetur adipisicing elit. Numquam, tempora ipsum aperiam, quibusdam atque aut voluptatem vel." />
       </div>
       <Swiper
         slidesPerView={"2"}

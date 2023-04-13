@@ -1,14 +1,14 @@
 import React from "react";
 
-const SocialLink = ({ img }) => {
+const SocialLink = ({ img, url }) => {
   return (
-    <div>
+    <a href={url} target="_blank">
       <img
         src={img}
         alt="social link"
         className="w-[25px] h-[25px] md:w-[32px] md:h-[32px]"
       />
-    </div>
+    </a>
   );
 };
 

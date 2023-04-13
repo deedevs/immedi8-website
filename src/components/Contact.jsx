@@ -12,8 +12,8 @@ import facebook from "../assets/facebook.png";
 import linkedin from "../assets/linkedin.png";
 import instagram from "../assets/instagram.png";
 import twitter from "../assets/twitter.png";
-import whatsapp from "../assets/whatsapp.png";
-import youtube from "../assets/youtube.png";
+// import whatsapp from "../assets/whatsapp.png";
+// import youtube from "../assets/youtube.png";
 import mail from "../assets/mail.jpg";
 import ContactForm from "./ContactForm";
 import Map from "./Map";
@@ -49,12 +49,24 @@ const Contact = () => {
               Social Links
             </h3>
             <div className="flex justify-between items-center w-2/3 md:w-full xl:w-2/3 mx-auto md:mx-0 ">
-              <SocialLink img={facebook} />
-              <SocialLink img={linkedin} />
-              <SocialLink img={instagram} />
-              <SocialLink img={twitter} />
-              <SocialLink img={whatsapp} />
-              <SocialLink img={youtube} />
+              <SocialLink
+                img={facebook}
+                url="https://www.facebook.com/immedi8finance"
+              />
+              <SocialLink
+                img={linkedin}
+                url="https://www.linkedin.com/company/immedi8-services/mycompany/?viewAsMember=true"
+              />
+              <SocialLink
+                img={instagram}
+                url="https://www.instagram.com/immedi8/"
+              />
+              <SocialLink
+                img={twitter}
+                url="https://twitter.com/immedi8money"
+              />
+              {/* <SocialLink img={whatsapp} url={} /> */}
+              {/* <SocialLink img={youtube}url={} /> */}
             </div>
           </div>
         </div>
