@@ -1,8 +1,8 @@
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
-import user1 from "../assets/testimonialImg.jpg";
-import user2 from "../assets/testimonialImg1.jpg";
-import user3 from "../assets/testimonialImg2.jpg";
+import user1 from "../assets/fatou_jallow.jpg";
+import user2 from "../assets/saul.jpg";
+import user3 from "../assets/kejaw.jpg";
 import user4 from "../assets/testimonialImg3.jpg";
 import user5 from "../assets/testimonialImg4.jpg";
 
@@ -16,7 +16,6 @@ import "../App.css";
 import { Pagination, Autoplay } from "swiper";
 import SectionTitle from "./SectionTitle";
 import SectionHeader from "./SectionHeader";
-import SectionParagraph from "./SectionParagraph";
 
 const Testimonial = () => {
   return (
@@ -29,7 +28,7 @@ const Testimonial = () => {
         <SectionHeader heading="What Users Say About Us" />
       </div>
       <Swiper
-        slidesPerView={"2"}
+        slidesPerView={"1"}
         spaceBetween={20}
         autoplay={{
           delay: 1500,
@@ -44,51 +43,25 @@ const Testimonial = () => {
         <SwiperSlide>
           <TestimonialCard
             image={user1}
-            name="Jean Johnson"
-            role="Developer"
-            comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
-        aliquam dolore harum vitae et, sapiente aspernatur amet deserunt
-        tempora."
+            name="Fatou Jallow "
+            role="CEO, Takaful Insurance Gambia"
+            comment="As a former resident of the UK. Immedi8 Financial Services has been reliable for me when sending money back home. I would recommend them anytime."
           />
         </SwiperSlide>
         <SwiperSlide>
           <TestimonialCard
             image={user2}
-            name="Alex Smith"
-            role="Developer"
-            comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
-        aliquam dolore harum vitae et, sapiente aspernatur amet deserunt
-        tempora."
+            name="Saul Frazer"
+            role=" CEO, Global Properties"
+            comment="We have worked with Immedi8 services since 2012 to facilitates some of our clients payments to our head office in The Gambia. They have been very reliable, fast and customer friendly."
           />
         </SwiperSlide>
         <SwiperSlide>
           <TestimonialCard
             image={user3}
-            name="Mariama Darboe"
-            role="Developer"
-            comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
-        aliquam dolore harum vitae et, sapiente aspernatur amet deserunt
-        tempora."
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TestimonialCard
-            image={user4}
-            name="Omar Jeng"
-            role="Developer"
-            comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
-        aliquam dolore harum vitae et, sapiente aspernatur amet deserunt
-        tempora."
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TestimonialCard
-            image={user5}
-            name="Ousman Touray"
-            role="Developer"
-            comment="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
-        aliquam dolore harum vitae et, sapiente aspernatur amet deserunt
-        tempora."
+            name="Kejau Touray"
+            role="CXO, Fankanta Technology"
+            comment="My favorite money transfer services from the UK. Fast and reliable. Immed8 Financial Services has outstanding customer service, and I will not hesitate to recommend their outstanding service to anyone."
           />
         </SwiperSlide>
       </Swiper>
