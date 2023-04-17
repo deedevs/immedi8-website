@@ -1,12 +1,10 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
-// import imoney from "../assets/imoney.png";
-import logo from "../assets/logo.png";
 import iPay from "../assets/iPay.png";
 import iFx from "../assets/iFx.png";
 import iLoan from "../assets/iLoan.png";
 import iWallet from "../assets/iWallet.png";
-
+import logo from "../assets/logo.png";
 import Card from "./ProductCard";
 
 const Products = () => {
