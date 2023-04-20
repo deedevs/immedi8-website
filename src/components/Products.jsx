@@ -1,12 +1,10 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
-// import imoney from "../assets/imoney.png";
-import logo from "../assets/logo.png";
 import iPay from "../assets/iPay.png";
 import iFx from "../assets/iFx.png";
 import iLoan from "../assets/iLoan.png";
 import iWallet from "../assets/iWallet.png";
-
+import logo from "../assets/logo.png";
 import Card from "./ProductCard";
 
 const Products = () => {
@@ -23,6 +21,7 @@ const Products = () => {
           image={logo}
           title="Money Transfer"
           description="Fast, Secure, Simple & Reliable Money Transfer Services across the Globe. In Over 190 Countries. Send & Receive with us today. You will join the Testimonies."
+          link="https://play.google.com/store/apps/details?id=com.immedi8moneymt"
         />
         <Card
           image={iPay}
