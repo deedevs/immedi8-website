@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PrimaryBtn from "./PrimaryBtn";
+// import PrimaryBtn from "./PrimaryBtn";
 
 const Card = ({ image, title, description, link }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -27,7 +27,7 @@ const Card = ({ image, title, description, link }) => {
         <div className="absolute top-0 left-0 h-full w-full p-4 bg-gradient-to-r from-[#1c2e4a] to-red-600 flex flex-col justify-center items-center opacity-0 transition-all duration-[1s] ease-in-out text-white hover:opacity-[1]">
           <h3 className=" text-xl font-semibold mb-3">{title}</h3>
           <p className="text-sm text-center text-gray-300">{description}</p>
-          <PrimaryBtn name="Download App" link={link} />
+          {/* <PrimaryBtn name="Download App" link={link} /> */}
         </div>
       )}
     </div>
