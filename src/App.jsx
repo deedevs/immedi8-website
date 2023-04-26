@@ -13,6 +13,9 @@ import "aos/dist/aos.css";
 
 import ReactGA from "react-ga";
 
+import NavBar from "./components/NavBar";
+
+
 const TRACKING_ID = "UA-261835404-1";
 
 ReactGA.initialize(TRACKING_ID);
@@ -31,9 +34,10 @@ function App() {
   }, []);
   return (
     <div className="w-full overflow-x-hidden font-poppins">
+      <NavBar />
       <Header />
       <About />
-      <Products />
+      {/* <Products /> */}
       <Services />
       <Regulators />
       <Contact />

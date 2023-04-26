@@ -21,7 +21,9 @@ const Products = () => {
           image={logo}
           title="Money Transfer"
           description="Fast, Secure, Simple & Reliable Money Transfer Services across the Globe. In Over 190 Countries. Send & Receive with us today. You will join the Testimonies."
-          // link="https://play.google.com/store/apps/details?id=com.immedi8moneymt"
+
+          link="https://play.google.com/store/apps/details?id=com.immedi8moneymt"
+
         />
         <Card
           image={iPay}
