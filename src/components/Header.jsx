@@ -1,15 +1,15 @@
 import React from "react";
-import NavBar from "./NavBar";
+// import NavBar from "./NavBar";
 import Hero from "./Hero";
 import Payments from "./Payments";
 
 const Header = () => {
   return (
     <div
-      className="header bg-no-repeat bg-cover bg-blend-overlay bg-center h-3/4 pb-36 relative"
+      className="header bg-no-repeat bg-cover bg-blend-overlay bg-center pb-36 relative mt-[140px] lg:mt-40"
       id="Home"
     >
-      <NavBar />
+      {/* <NavBar /> */}
       <Hero />
       <Payments
         className={
