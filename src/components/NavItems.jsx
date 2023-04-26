@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-// import LoginBtn from "./LoginBtn";
+import LoginBtn from "./LoginBtn";
 
 const NavItems = ({ className, items }) => {
   return (
@@ -20,7 +20,7 @@ const NavItems = ({ className, items }) => {
           </Link>
         </li>
       ))}
-      {/* <LoginBtn className="xl:hidden" /> */}
+      <LoginBtn className="xl:hidden" />
     </ul>
   );
 };

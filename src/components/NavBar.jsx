@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-// import LoginBtn from "./LoginBtn";
+import LoginBtn from "./LoginBtn";
 import Logo from "./Logo";
 import NavItems from "./NavItems";
 import "../App";
@@ -66,7 +66,7 @@ const NavBar = () => {
          } `}
           //  ${ bgState === "white" ? "bg-white text-black" : "bg-black text-white"}
         />
-        {/* <LoginBtn className="hidden xl:block mt-4" /> */}
+        <LoginBtn className="hidden xl:block mt-4" />
       </div>
     </nav>
   );
