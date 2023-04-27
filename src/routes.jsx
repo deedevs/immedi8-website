@@ -4,6 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 import App from "./App";
+import Career from "./pages/Career";
 import RootLayout from "./layout/RootLayout";
 import Policy from "./pages/Policy";
 import Compliance from "./pages/AmlAndComliance";
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<App />} />
+      <Route path="career" element={<Career />} />
       <Route path="docs" element={<Layout />}>
         <Route path="policy" element={<Policy />} />
         <Route path="aml-and-compliance" element={<Compliance />} />

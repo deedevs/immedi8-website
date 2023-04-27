@@ -20,6 +20,9 @@ const NavItems = ({ className, items }) => {
           </Link>
         </li>
       ))}
+      {/* <li>
+        <a href="/career">Career</a>
+      </li> */}
       <LoginBtn className="xl:hidden" />
     </ul>
   );

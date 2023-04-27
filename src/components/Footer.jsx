@@ -2,7 +2,6 @@ import React from "react";
 import QuickLink from "./QuickLink";
 import CopyWrite from "./CopyWrite";
 import GoToTop from "./GoToTop";
-import { useState } from "react";
 
 const Footer = () => {
   return (

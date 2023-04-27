@@ -22,7 +22,7 @@ const Hero = () => {
             Send money to The Gambia Fast and Secured with competitive rate
           </p> */}
           <p className="leading-6 text-lg md:text-2xl text-gray-400 my-3">
-            Remittance Untangled, Mobile Money reinvented
+            Remittance Untangled, Mobile Money Reinvented
           </p>
           <p className="leading-6 text-lg md:text-2xl text-gray-400 my-3">
             Send, Topup, Cash-In, Cash-Out, Pay & Buy
@@ -35,7 +35,7 @@ const Hero = () => {
               Download Our App Now
             </h4>
             <div className="md:flex items-center space-y-6 md:space-y-0">
-              <div className="w-[150px] mx-auto md:mx-0">
+              <div className="w-[200px] mx-auto md:mx-0">
                 <a
                   href="https://play.google.com/store/apps/details?id=com.immedi8moneymt"
                   target="_blank"
@@ -49,7 +49,7 @@ const Hero = () => {
                   <img src={android} alt="Download Button" />
                 </a>
               </div>
-              <div className="md:ml-8 w-[150px] mx-auto md:mx-0">
+              <div className="md:ml-8 w-[200px] mx-auto md:mx-0">
                 <a
                   href="https://apps.apple.com/us/app/imoney-money-transfer/id6446627721"
                   target="_blank"
