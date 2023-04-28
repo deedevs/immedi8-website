@@ -1,5 +1,6 @@
 import React from "react";
 import PrimaryBtn from "./PrimaryBtn";
+import careerImg from "../assets/career.jpg";
 
 const CareerHero = () => {
   return (
@@ -16,9 +17,9 @@ const CareerHero = () => {
 
           <PrimaryBtn name="Join Us Now" />
         </div>
-        <div className="px-14 md:px-0 py-6 my-auto h-[500px]">
+        <div className="px-14 md:px-0 py-16 my-auto h-[500px] md:w-[33.333%]">
           <div className="md:w-full mx-auto">
-            <h2>image here</h2>
+            <img src={careerImg} alt="career photo" />
           </div>
         </div>
       </div>
