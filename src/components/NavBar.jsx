@@ -8,7 +8,6 @@ const NavBar = () => {
   const navItems = [
     { name: "About", to: "About" },
     { name: "Services", to: "Services" },
-    { name: "Career", to: "#" },
     { name: "Contact", to: "Contact" },
   ];
   const [open, setOpen] = useState(false);
@@ -42,7 +41,7 @@ const NavBar = () => {
   return (
     <nav
       // ref={nav}
-      className="py-5 md:px-14 px-5 bg-white text-black fixed top-0 left-0 right-0 z-50 shadow-md w-full"
+      className="md:px-14 px-5 bg-white text-black fixed top-0 left-0 right-0 z-50 shadow-md w-full"
     >
       <div className="md:flex items-center justify-between">
         <Logo />

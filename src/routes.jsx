@@ -4,6 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 import App from "./App";
+import Career from "./pages/Career";
 import RootLayout from "./layout/RootLayout";
 import Policy from "./pages/Policy";
 import Compliance from "./pages/AmlAndComliance";
@@ -13,11 +14,17 @@ import Privacy from "./pages/Privacy";
 import RefundPolicy from "./pages/RefundPolicy";
 import ComplaintPolicy from "./pages/ComplaintPolicy";
 import Layout from "./layout/Layout";
+import CareerLayout from "./layout/CareerLayout";
+import CareerPost from "./pages/CareerPost";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<App />} />
+      <Route path="career" element={<CareerLayout />}>
+        <Route path="post" element={<Career />} />
+        <Route path="post/:id" element={<CareerPost />} />
+      </Route>
       <Route path="docs" element={<Layout />}>
         <Route path="policy" element={<Policy />} />
         <Route path="aml-and-compliance" element={<Compliance />} />
