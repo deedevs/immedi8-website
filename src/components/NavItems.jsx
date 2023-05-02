@@ -21,7 +21,9 @@ const NavItems = ({ className, items }) => {
         </li>
       ))}
       <li>
-        <a href="/career">Career</a>
+        <a href="/career/post" className="hover:text-red-600 font-medium">
+          Career
+        </a>
       </li>
       <LoginBtn className="xl:hidden" />
     </ul>
