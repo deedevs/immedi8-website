@@ -6,7 +6,7 @@ import Payments from "./Payments";
 const Header = () => {
   return (
     <div
-      className="header bg-no-repeat bg-cover bg-blend-overlay bg-center pb-36 relative mt-[140px] lg:mt-40"
+      className="header bg-no-repeat bg-cover bg-blend-overlay bg-center pb-36 relative mt-[100px] lg:mt-32"
       id="Home"
     >
       {/* <NavBar /> */}
