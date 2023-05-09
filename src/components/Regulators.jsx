@@ -7,11 +7,11 @@ const Regulators = () => {
   return (
     <div
       id="Regulators"
-      className="bg-[#1c2e4a] text-white lg:px-52 md:px-14 px-5 pt-14 pb-24"
+      className="bg-[#1c2e4a] text-white xl:px-52 md:px-14 px-5 pt-14 pb-24"
     >
       <SectionTitle title="Regulators" className="text-center" />
-      <div className="md:flex w-full justify-between items-center">
-        <div className="md:w-[50%] py-6 text-center md:text-start md:mr-14 md:mt-8 lg:mt-10 xxl:mt-14 space-y-2">
+      <div className="lg:flex w-full justify-between items-center">
+        <div className="lg:w-1/2 py-6 text-center md:text-start md:mr-14 md:mt-8 lg:mt-10 xxl:mt-14 space-y-2">
           <SectionHeader heading="Our Regulators" className="uppercase" />
 
           <p className="text-gray-400 leading-6 text-sm md:text-lg mb-4">
@@ -37,7 +37,7 @@ const Regulators = () => {
         </div>
         <div
           data-aos="slide-left"
-          className="space-y-8 w-full md:w-1/2 md:space-y-0 text-center mt-10"
+          className="space-y-8 w-full lg:w-1/2 lg:space-y-0 text-center mt-10"
         >
           <img
             src={regulatorsImg}

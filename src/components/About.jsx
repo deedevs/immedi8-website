@@ -9,11 +9,11 @@ const Services = () => {
   return (
     <div
       id="About"
-      className="bg-white text-black lg:px-52 md:px-14 px-5 pt-36 pb-24"
+      className="bg-white text-black xl:px-52 md:px-14 px-5 pt-36 pb-24"
     >
       <SectionTitle title="About Us" className="text-center" />
-      <div className="md:flex w-full justify-between items-center">
-        <div className="md:w-[50%] py-6 text-center md:text-start md:mr-14 md:mt-8 lg:mt-10 xxl:mt-14">
+      <div className="lg:flex w-full justify-between items-center">
+        <div className="lg:w-1/2 py-6 text-center md:text-start md:mr-14 md:mt-8 lg:mt-10 xxl:mt-14">
           <SectionHeader
             heading="One Stop Financial Services"
             className="uppercase"
@@ -24,7 +24,7 @@ const Services = () => {
         </div>
         <div
           data-aos="flip-left"
-          className="space-y-8 w-full md:w-1/2 md:space-y-0"
+          className="space-y-8 w-full lg:w-1/2 lg:space-y-0"
         >
           <img src={aboutImg} alt="About Image" className="" />
         </div>

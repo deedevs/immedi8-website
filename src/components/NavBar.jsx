@@ -47,7 +47,7 @@ const NavBar = () => {
       <div className="md:flex items-center justify-between">
         <Logo />
         <div
-          className=" absolute right-6 top-[65px] xl:hidden"
+          className=" absolute right-6 top-[55px] xl:hidden"
           onClick={() => setOpen(!open)}
         >
           <i
