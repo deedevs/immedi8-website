@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="text-[#1c2e4a] bg-white lg:px-52 md:px-14 px-5 pt-14 pb-24"
+      className="text-[#1c2e4a] bg-white xl:px-52 md:px-14 px-5 pt-14 pb-24"
     >
       <SectionTitle title="Contact Us" className="text-center" />
       <div className="md:flex w-full justify-between items-center">
@@ -76,7 +76,7 @@ const Contact = () => {
             Enquiries / Contact
           </h4>
 
-          <div className="w-full p-8 pr-0">
+          <div className="w-full pr-0">
             <ContactForm />
           </div>
         </div>

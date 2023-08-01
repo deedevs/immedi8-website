@@ -2,6 +2,8 @@ import React from "react";
 // import NavBar from "./NavBar";
 import Hero from "./Hero";
 import Payments from "./Payments";
+// import Marquee from "react-fast-marquee";
+import Ratesmarquee from "./Ratesmarquee";
 
 const Header = () => {
   return (
@@ -10,6 +12,7 @@ const Header = () => {
       id="Home"
     >
       {/* <NavBar /> */}
+      <Ratesmarquee />
       <Hero />
       <Payments
         className={

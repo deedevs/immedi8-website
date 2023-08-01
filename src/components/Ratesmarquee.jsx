@@ -1,0 +1,33 @@
+import React from "react";
+import Marquee from "react-fast-marquee";
+
+const Ratesmarquee = () => {
+  return (
+    <Marquee
+      className="h-14 bg-transparent text-white text-xl pt-8 md:pt-0 hidden xl:visible"
+      autoFill={true}
+      pauseOnHover={true}
+    >
+      <div className="flex gap-8 mr-8 items-center">
+        {/* <h2 className="text-white">Rates:</h2>
+        <br /> */}
+        {/* <div className=""> */}
+        <p>
+          Pounds: <span>£75.95</span>
+        </p>
+        <p>
+          Dollar: <span>$59.21</span>
+        </p>
+        <p>
+          DKK: <span>8.71</span>
+        </p>
+        <p>
+          EURO: <span>64.96</span>
+        </p>
+        {/* </div> */}
+      </div>
+    </Marquee>
+  );
+};
+
+export default Ratesmarquee;

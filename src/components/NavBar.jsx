@@ -60,7 +60,7 @@ const NavBar = () => {
         <NavItems
           items={navItems}
           className={` xl:flex xl:items-center xl:space-x-5 xl:space-y-0 space-y-4 text-xl
-         xl:pb-0 pb-5 xl:pt-0 pt-8 absolute xl:static xl:z-10 z-[1] left-0 w-full xl:w-auto xl:pl-0 pl-9 xl:mt-0 xl:bg-inherit  transition-all duration-500 ease-in bg-white text-black ${
+         xl:pb-0 pb-14 xl:pt-0 pt-8 absolute xl:static xl:z-10 z-[1] left-0 w-full xl:w-auto xl:pl-0 pl-9 xl:mt-0 xl:bg-inherit  transition-all duration-500 ease-in bg-white text-black ${
            open ? "top-[108px] opacity-100 z-[1]" : "top-[-490px]"
          } `}
           //  ${ bgState === "white" ? "bg-white text-black" : "bg-black text-white"}

@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
+import SocialLink from "./SocialLink";
+import whatsapp from "../assets/whatsapp.png";
 
 const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
+
+  const phoneNumber = "+447940163825";
+
+  const formattedPhoneNumber = phoneNumber.replace(/[^\d]/g, "");
 
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
@@ -27,6 +33,11 @@ const GoToTop = () => {
   }, []);
   return (
     <div className="fixed bottom-10 right-4">
+      <div className="w-[40px] md:w-[60px] mb-8">
+        <a href={`https://wa.me/${formattedPhoneNumber}`} target="_blank">
+          <img src={whatsapp} alt="social link" className="" />
+        </a>
+      </div>
       <button
         type="button"
         onClick={scrollToTop}
