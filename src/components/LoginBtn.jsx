@@ -2,7 +2,7 @@ import React from "react";
 
 const LoginBtn = ({ className }) => {
   return (
-    <div className="pt-5">
+    <div className="">
       <a
         href="https://app.immedi8money.com"
         target="_blank"
