@@ -5,12 +5,16 @@ const RatesForm = () => {
   //   const [receiverCurrency, setReceiverCurrency] = useState("");
   const [deliveryMethod, setDeliveryMethod] = useState("");
 
+  const [amountToSend, setAmountToSend] = useState("");
+  const [amountToRecieve, setAmountToRecieve] = useState("");
+
   const handleDeliveryMethodChange = (e) => setDeliveryMethod(e.target.value);
   const handleSenderCurrencyChange = (e) => setSenderCurrency(e.target.value);
   //   const handleReceiverCurrencyChange = (e) => setReceiverCurrency(e.target.value);
 
   return (
     <div className="max-w-[700px] w-full bg-[#1c2e4a] rounded-sm p-6">
+      <h3 className="text-white text-xl text-center">Make a Transfer</h3>
       <div className="w-full">
         <form action="#" className="space-y-2 text-white">
           <div>
@@ -45,6 +49,7 @@ const RatesForm = () => {
               <input
                 type="number"
                 min="1"
+                value="4000"
                 className="w-1/2 leading-3 p-2.5 outline-none text-black"
                 required
               />
@@ -59,60 +64,100 @@ const RatesForm = () => {
               </div>
             </div>
           </div>
-          <div>
-            <p>
-              <span>{senderCurrency}</span> <span>1</span> = <span>GMD</span>{" "}
-              <span>75.45</span>
-            </p>
-          </div>
-          <div>
-            <label htmlFor="">Choose Delivery Method</label>
-            <div className="w-full">
+          {/* <div>
+          </div> */}
+
+          <div className="lg:flex justify-between">
+            <div className="lg:flex-1">
+              <label htmlFor="">Choose Delivery Method</label>
               <div className="w-full">
-                <label>
-                  <input
-                    id="delivery-method-1"
-                    value="cash pick up"
-                    type="radio"
-                    name="immedi8-delivery"
-                    className="mr-2"
-                    onChange={handleDeliveryMethodChange}
-                  />
-                  Cash Pick Up
-                </label>
+                <div className="w-full">
+                  <label>
+                    <input
+                      id="delivery-method-1"
+                      value="cash pick up"
+                      type="radio"
+                      name="immedi8-delivery"
+                      className="mr-2"
+                      onChange={handleDeliveryMethodChange}
+                    />
+                    Cash Pick Up
+                  </label>
+                </div>
+
+                <div className="w-full">
+                  <label>
+                    <input
+                      value="bank deposit"
+                      id="delivery-method-2"
+                      type="radio"
+                      name="immedi8-delivery"
+                      className="mr-2"
+                      onChange={handleDeliveryMethodChange}
+                    />
+                    Bank Deposit
+                  </label>
+                </div>
+                <div className="w-full">
+                  <label>
+                    <input
+                      value="mobile wallet"
+                      id="delivery-method-3"
+                      type="radio"
+                      name="immedi8-delivery"
+                      className="mr-2"
+                      onChange={handleDeliveryMethodChange}
+                    />
+                    Mobile Wallet
+                  </label>
+                </div>
               </div>
 
               <div className="w-full">
-                <label>
-                  <input
-                    value="bank deposit"
-                    id="delivery-method-2"
-                    type="radio"
-                    name="immedi8-delivery"
-                    className="mr-2"
-                    onChange={handleDeliveryMethodChange}
-                  />
-                  Bank Deposit
-                </label>
+                {/* lg:flex justify-between items-center */}
+                <p>
+                  Delivery time =
+                  <span>
+                    {deliveryMethod == "cash pick up" ||
+                    deliveryMethod == "mobile wallet" ? (
+                      <span className="text-red-600"> Instant</span>
+                    ) : deliveryMethod == "bank deposit" ? (
+                      <span className="text-red-600"> Up to 24 hours</span>
+                    ) : (
+                      <span className="text-red-600"> Instant</span>
+                    )}
+                  </span>
+                </p>
+                <div className="my-4">
+                  <button className="px-3 py-2 border-none bg-green-900 rounded-md">
+                    Calculate
+                  </button>
+                </div>
+                {/* <p>
+                Delivery Fee = <span>{senderCurrency}</span> 0.00
+                </p> */}
               </div>
             </div>
-          </div>
-          <div className="w-full lg:flex justify-between items-center">
-            <p>
-              Delivery time =
-              <span>
-                {deliveryMethod == "cash pick up" ? (
-                  <span className="text-red-600"> Instant</span>
-                ) : (
-                  <span className="text-red-600"> Up to 24 hours</span>
-                )}
-              </span>
-            </p>
-            <p>
-              Delivery Fee = <span>{senderCurrency}</span> 0.00
-            </p>
-          </div>
+            <div className="lg:text-left">
+              {amountToRecieve ? (
+                <div>
+                  <h3 className="text-white">Rate and Fees</h3>
 
+                  <li>
+                    <span>Rate: {senderCurrency}</span> <span>1</span> ={" "}
+                    <span>GMD</span> <span>75.45</span>
+                  </li>
+
+                  <li>
+                    <span>Fee: {senderCurrency}</span>
+                    <span>GMD</span> <span>75.45</span>
+                  </li>
+                </div>
+              ) : (
+                ""
+              )}
+            </div>
+          </div>
           <div className="w-full">
             <button
               type="submit"
