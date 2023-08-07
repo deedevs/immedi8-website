@@ -1,13 +1,23 @@
 import React, { useEffect, useState } from "react";
 import SocialLink from "./SocialLink";
 import whatsapp from "../assets/whatsapp.png";
+import advert from "../assets/conversation.png";
 
 const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [showAdvert, setShowAdvert] = useState(false);
 
   const phoneNumber = "+447940163825";
 
   const formattedPhoneNumber = phoneNumber.replace(/[^\d]/g, "");
+
+  const handleMouseEnter = () => {
+    setShowAdvert(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowAdvert(false);
+  };
 
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
@@ -33,6 +43,23 @@ const GoToTop = () => {
   }, []);
   return (
     <div className="fixed bottom-10 right-4">
+      <div
+        className="mb-6 cursor-pointer relative"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <img src={advert} alt="advertisment" />
+        {showAdvert && (
+          <div className="absolute top-[40%] left-[-453px] bg-[#eceaea] text-[#333] p-5 max-w-md max-h-56 border-2 rounded-2xl">
+            <q>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit sint reiciendis minima! Vitae nulla laudantium
+              recusandae nemo accusamus libero laboriosam, eius harum, possimus
+              excepturi doloribus reprehenderit debitis, quidem reiciendis non.
+            </q>
+          </div>
+        )}
+      </div>
       <div className="w-[40px] md:w-[60px] mb-8">
         <a href={`https://wa.me/${formattedPhoneNumber}`} target="_blank">
           <img src={whatsapp} alt="social link" className="" />
