@@ -49,7 +49,7 @@ const RatesForm = () => {
               <input
                 type="number"
                 min="1"
-                value="4000"
+                value=""
                 className="w-1/2 leading-3 p-2.5 outline-none text-black"
                 required
               />
