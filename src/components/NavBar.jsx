@@ -9,6 +9,7 @@ const NavBar = () => {
     { name: "About", to: "About" },
     { name: "Services", to: "Services" },
     { name: "Contact", to: "Contact" },
+    { name: "FAQ", to: "FAQ" },
   ];
   const [open, setOpen] = useState(false);
   // const [bgState, setBgState] = useState("black");
