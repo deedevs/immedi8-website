@@ -3,6 +3,7 @@ import Form from "./Form";
 import android from "../assets/android.jpg";
 import iOS from "../assets/iOS.jpg";
 import ReactGA from "react-ga";
+import RatesForm from "./RatesForm";
 
 const Hero = () => {
   const handleEvent = (event) => {
@@ -13,8 +14,10 @@ const Hero = () => {
   };
   return (
     <div className=" xl:px-52 md:px-14 px-5 py-8 h-full">
+
       <div className="md:flex w-full md:gap-x-24">
         <div className=" md:w-2/3 py-6 text-center md:text-start pt-20">
+
           <h2 className="text-2xl md:text-4xl lg:text-6xl text-red-600 pb-5 capitalize">
             Immedi8 Financial Services
           </h2>
@@ -60,9 +63,12 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="py-6 my-auto h-[500px]">
-          <div className="md:w-full mx-auto">
-            <Form />
+
+        <div className=" py-6 my-auto pt-20">
+          <div className="md:w-full w-full">
+            {/* <Form /> */}
+            <RatesForm />
+
           </div>
         </div>
       </div>
