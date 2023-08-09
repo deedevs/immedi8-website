@@ -6,7 +6,7 @@ const RatesForm = () => {
   const [deliveryMethod, setDeliveryMethod] = useState("");
 
   const [amountToSend, setAmountToSend] = useState("");
-  const [amountToRecieve, setAmountToRecieve] = useState("");
+  const [amountToRecieve, setAmountToRecieve] = useState(200);
 
   const handleDeliveryMethodChange = (e) => setDeliveryMethod(e.target.value);
   const handleSenderCurrencyChange = (e) => setSenderCurrency(e.target.value);
