@@ -14,7 +14,7 @@ import "aos/dist/aos.css";
 import ReactGA from "react-ga";
 
 import NavBar from "./components/NavBar";
-
+import Marquee from "react-fast-marquee";
 
 const TRACKING_ID = "UA-261835404-1";
 
@@ -35,6 +35,7 @@ function App() {
   return (
     <div className="w-full overflow-x-hidden font-poppins">
       <NavBar />
+      {/* <Marquee /> */}
       <Header />
       <About />
       {/* <Products /> */}

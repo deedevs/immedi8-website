@@ -4,7 +4,7 @@ import LoginBtn from "./LoginBtn";
 
 const NavItems = ({ className, items }) => {
   return (
-    <ul className={className}>
+    <ul className={`${className} pb-14 z-0`}>
       {items.map((item, index) => (
         <li key={index} className="ml-5 cursor-pointer">
           <Link
@@ -20,12 +20,12 @@ const NavItems = ({ className, items }) => {
           </Link>
         </li>
       ))}
-      <li>
+      <li className="ml-5">
         <a href="/career/post" className="hover:text-red-600 font-medium">
           Career
         </a>
       </li>
-      <LoginBtn className="xl:hidden" />
+      <LoginBtn className="xl:hidden mt-8 ml-5" />
     </ul>
   );
 };

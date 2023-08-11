@@ -45,7 +45,7 @@ const FAQ = () => {
   return (
     <div
       id="FAQ"
-      className="bg-[#1c2e4a] text-white lg:px-52 md:px-14 px-5 pt-14 pb-24 text-center"
+      className="bg-[#1c2e4a] text-white xl:px-52 md:px-14 px-5 pt-14 pb-24 text-center"
     >
       <div className="space-y-3 mb-8">
         <SectionTitle title="FAQ" />

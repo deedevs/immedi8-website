@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <div
       id="About"
-      className="bg-white text-black lg:px-52 md:px-14 px-5 pt-36 pb-24"
+      className="bg-white text-black xl:px-52 md:px-14 px-5 pt-36 pb-24"
     >
       <SectionTitle title="About Us" className="text-center" />
       <div className="md:flex w-full justify-between items-center">

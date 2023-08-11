@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <div
       id="Services"
-      className="bg-white text-black lg:px-52 md:px-14 px-5 pt-14 pb-24"
+      className="bg-white text-black xl:px-52 md:px-14 px-5 pt-14 pb-24"
     >
       {/* md:flex w-full justify-between  */}
       <div className="">
