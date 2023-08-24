@@ -43,7 +43,7 @@ const GoToTop = () => {
   }, []);
   return (
     <div className="fixed bottom-10 right-4">
-      <div
+      {/* <div
         className="mb-6 cursor-pointer relative"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -59,9 +59,13 @@ const GoToTop = () => {
             </q>
           </div>
         )}
-      </div>
-      <div className="w-[40px] md:w-[60px] mb-8">
-        <a href={`https://wa.me/${formattedPhoneNumber}`} target="_blank">
+      </div> */}
+      <div className="w-[40px] md:w-[60px] mb-8 ">
+        <a
+          href={`https://wa.me/${formattedPhoneNumber}`}
+          target="_blank"
+          className="z-[100]"
+        >
           <img src={whatsapp} alt="social link" className="" />
         </a>
       </div>

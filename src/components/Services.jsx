@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceCard from "./ServiceCard";
+import ServicesCard from "./services/ServiceCard";
 import cash from "../assets/cash.png";
 import payment from "../assets/payment.png";
 import wallet from "../assets/wallet.png";
