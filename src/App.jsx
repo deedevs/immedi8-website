@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import Header from "./components/Header";
+// import Header from "./components/Header";
+import Header from "./components/header/Header";
 import About from "./components/About";
 import Services from "./components/Services";
 import Products from "./components/Products";
@@ -34,7 +35,7 @@ function App() {
   }, []);
   return (
     <div className="w-full overflow-x-hidden font-poppins">
-      <NavBar />
+      {/* <NavBar /> */}
       {/* <Marquee /> */}
       <Header />
       <About />
