@@ -1,11 +1,11 @@
 import React from "react";
-import SectionHeader from "./SectionHeader";
-import SectionParagraph from "./SectionParagraph";
-import PrimaryBtn from "./PrimaryBtn";
-import SectionTitle from "./SectionTitle";
-import aboutImg from "../assets/about.jpg";
+import SectionHeader from "../SectionHeader";
+import SectionParagraph from "../SectionParagraph";
+import PrimaryBtn from "../PrimaryBtn";
+import SectionTitle from "../SectionTitle";
+import aboutImg from "../../assets/about.jpg";
 
-const Services = () => {
+const About = () => {
   return (
     <div
       id="About"
@@ -33,4 +33,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default About;

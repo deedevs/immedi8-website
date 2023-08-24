@@ -160,7 +160,7 @@ const NavBar = () => {
                     duration={1000}
                     key={item.name}
                     to={item.to}
-                    className="-mx-3 cursor-pointer block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300"
+                    className="-mx-3 cursor-pointer block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#080145] hover:bg-gray-300"
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                   >
                     {item.name}

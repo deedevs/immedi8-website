@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 // import Header from "./components/Header";
 import Header from "./components/header/Header";
-import About from "./components/About";
+import About from "./components/about/About";
 import Services from "./components/Services";
 import Products from "./components/Products";
 import Contact from "./components/Contact";
@@ -16,6 +16,7 @@ import ReactGA from "react-ga";
 
 import NavBar from "./components/NavBar";
 import Marquee from "react-fast-marquee";
+import Transfer from "./components/transfer/Transfer";
 
 const TRACKING_ID = "UA-261835404-1";
 
@@ -38,6 +39,7 @@ function App() {
       {/* <NavBar /> */}
       {/* <Marquee /> */}
       <Header />
+      <Transfer />
       <About />
       {/* <Products /> */}
       <Services />
