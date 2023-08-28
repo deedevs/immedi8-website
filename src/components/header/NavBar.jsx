@@ -45,7 +45,7 @@ const NavBar = () => {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className="relative">
+    <div className="relative bg-white text-[#080145]">
       <nav
         ref={nav}
         className="flex items-center justify-between px-3 "

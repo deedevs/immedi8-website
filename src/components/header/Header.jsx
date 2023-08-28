@@ -16,7 +16,7 @@ const Header = () => {
         loop
         muted
       ></video>
-      <div className="h-screen w-full absolute top-0 left-0 bg-slate-600/50"></div>
+      <div className="h-screen w-full absolute top-0 left-0 bg-slate-600/60"></div>
 
       <header className="absolute inset-x-0 top-0 z-50">
         <NavBar />

@@ -52,8 +52,8 @@ const Procedures = () => {
             </div>
           </div>
         </div> */}
-        <div class="md:flex items-center w-full py-14">
-          <div class="w-full md:w-80 h-[200px]  shadow-lg shadow-[#080145] p-3 border-slate-200 rounded-lg bg-[#080145]">
+        <div className="md:flex items-center w-full py-14">
+          <div className="w-full md:w-80 h-[200px]  shadow-lg shadow-[#080145] p-3 border-slate-200 rounded-lg bg-[#080145]">
             <div className="w-16 h-16 lg:w-24 lg:h-24 mx-auto mt-4 p-3 rounded-full bg-white">
               <img src={enter} alt="" className="w-full h-full" />
             </div>
@@ -61,8 +61,8 @@ const Procedures = () => {
               <p>Enter Amount</p>
             </div>
           </div>
-          <div class="h-10 w-1 mx-auto md:w-[213px] md:h-0.5 bg-[#080145] "></div>
-          <div class="w-full md:w-80 h-[200px]  shadow-lg shadow-[#080145] p-3 border-slate-200 rounded-lg bg-[#080145]">
+          <div className="h-10 w-1 mx-auto md:w-[213px] md:h-0.5 bg-[#080145] "></div>
+          <div className="w-full md:w-80 h-[200px]  shadow-lg shadow-[#080145] p-3 border-slate-200 rounded-lg bg-[#080145]">
             <div className="w-16 h-16 lg:w-24 lg:h-24 mx-auto mt-4 p-3 rounded-full bg-white">
               <img src={users} alt="" className="w-full h-full" />
             </div>
@@ -70,8 +70,8 @@ const Procedures = () => {
               <p>Select Beneficiary</p>
             </div>
           </div>
-          <div class="h-10 w-1 mx-auto md:w-[213px] md:h-0.5 bg-[#080145] "></div>
-          <div class="w-full md:w-80 h-[200px]   shadow-lg shadow-[#080145] p-3 border-slate-200 rounded-lg bg-[#080145]">
+          <div className="h-10 w-1 mx-auto md:w-[213px] md:h-0.5 bg-[#080145] "></div>
+          <div className="w-full md:w-80 h-[200px]   shadow-lg shadow-[#080145] p-3 border-slate-200 rounded-lg bg-[#080145]">
             <div className="w-16 lg:w-24 h-16 lg:h-24 mx-auto mt-4 p-3 rounded-full bg-white">
               <img src={payment} alt="" className="w-full h-full" />
             </div>

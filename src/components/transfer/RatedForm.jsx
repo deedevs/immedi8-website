@@ -6,12 +6,23 @@ const RatesForm = () => {
   const [deliveryMethod, setDeliveryMethod] = useState("");
 
   const [amountToSend, setAmountToSend] = useState("");
-  const [amountToRecieve, setAmountToRecieve] = useState(200);
+  const [amountToRecieve, setAmountToRecieve] = useState("");
 
   const handleDeliveryMethodChange = (e) => setDeliveryMethod(e.target.value);
   const handleSenderCurrencyChange = (e) => setSenderCurrency(e.target.value);
-  const handleReceiverCurrencyChange = (e) =>
-    setReceiverCurrency(e.target.value);
+
+  const handleAmountChange = (event) => {
+    const inputAmount = event.target.value;
+    setAmountToSend(inputAmount);
+
+    if (!isNaN(inputAmount.trim())) {
+      const calculatedResult = parseFloat(inputAmount) * 70;
+      setAmountToRecieve(calculatedResult.toFixed(2));
+    } else {
+      setAmountToRecieve("");
+      setAmountToSend("");
+    }
+  };
 
   return (
     <div className="max-w-[700px] w-full bg-white shadow-md rounded-3xl border-lime-100 p-6">
@@ -22,9 +33,10 @@ const RatesForm = () => {
             <label htmlFor="">You are sending</label>
             <div className="flex items-center">
               <input
-                type="number"
-                min="1"
+                type="text"
+                value={amountToSend}
                 className="w-1/2 leading-3 p-2.5 outline-none text-black border border-gray-900"
+                onChange={handleAmountChange}
                 required
               />
               <div className="w-1/2">
@@ -48,11 +60,10 @@ const RatesForm = () => {
             <label htmlFor="">They will receive</label>
             <div className="flex items-center">
               <input
-                type="number"
-                min="1"
-                value=""
+                type="text"
+                value={amountToRecieve}
                 className="w-1/2 leading-3 p-2.5 outline-none text-black border border-gray-900"
-                required
+                readOnly
               />
               <div className="w-1/2">
                 <select

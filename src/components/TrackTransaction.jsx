@@ -16,12 +16,12 @@ const TrackTransaction = ({ className }) => {
   return (
     <div className={className}>
       <form action="#">
-        <div className="border flex rounded-full w-full my-8 xl:my-0">
+        <div className="border border-[#080145] flex rounded-full w-full my-8 xl:my-0">
           <input
             ref={search}
             type="text"
             placeholder="Track transaction"
-            className="px-3 py-3 border-none bg-transparent outline-none rounded-tl-full rounded-bl-full w-[90%] placeholder:text-amber-50"
+            className="px-3 py-3 border-none bg-transparent outline-none rounded-tl-full rounded-bl-full w-[90%] placeholder:text-[#ccc]"
           />
           <div className="flex justify-center ">
             <button className="btn btn-primary px-6 py-1.5 border-0 border-r-lg">

@@ -6,11 +6,21 @@ const RatesForm = () => {
   const [deliveryMethod, setDeliveryMethod] = useState("");
 
   const [amountToSend, setAmountToSend] = useState("");
-  const [amountToRecieve, setAmountToRecieve] = useState(200);
+  const [amountToRecieve, setAmountToRecieve] = useState("");
 
   const handleDeliveryMethodChange = (e) => setDeliveryMethod(e.target.value);
   const handleSenderCurrencyChange = (e) => setSenderCurrency(e.target.value);
-  //   const handleReceiverCurrencyChange = (e) => setReceiverCurrency(e.target.value);
+
+  const handleAmountChange = (event) => {
+    const inputAmount = event.target.value;
+    setAmountToSend(inputAmount);
+    if (!isNaN(inputAmount)) {
+      const calculatedResult = parseFloat(inputAmount) * 70;
+      setAmountToRecieve(calculatedResult.toFixed(2));
+    } else {
+      setAmountToRecieve("");
+    }
+  };
 
   return (
     <div className="max-w-[700px] w-full bg-[#1c2e4a] rounded-sm p-6">
@@ -21,8 +31,9 @@ const RatesForm = () => {
             <label htmlFor="">You are sending</label>
             <div className="flex items-center">
               <input
-                type="number"
-                min="1"
+                value={amountToSend}
+                type="text"
+                onChange={handleAmountChange}
                 className="w-1/2 leading-3 p-2.5 outline-none text-black"
                 required
               />
@@ -47,11 +58,10 @@ const RatesForm = () => {
             <label htmlFor="">They will receive</label>
             <div className="flex items-center">
               <input
-                type="number"
-                min="1"
-                value=""
+                type="text"
+                value={amountToRecieve}
+                readOnly
                 className="w-1/2 leading-3 p-2.5 outline-none text-black"
-                required
               />
               <div className="w-1/2">
                 <select
