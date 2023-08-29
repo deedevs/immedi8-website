@@ -6,6 +6,9 @@
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
 }
+.screen {
+  height: calc(100vh - 225px);
+}
 
 .octa {
   -webkit-clip-path: polygon(

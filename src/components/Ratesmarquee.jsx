@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const Ratesmarquee = () => {
   return (
     <Marquee
-      className="h-14 bg-transparent text-white text-xl pt-8 md:pt-0 hidden xl:visible"
+      className="h-14 bg-transparent text-white font-extrabold text-xl pt-8 md:pt-0 hidden xl:visible"
       autoFill={true}
       pauseOnHover={true}
     >

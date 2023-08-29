@@ -16,7 +16,7 @@ const TrackTransaction = ({ className }) => {
   return (
     <div className={className}>
       <form action="#">
-        <div className="border border-[#080145] flex rounded-full w-full my-8 xl:my-0">
+        <div className="border flex rounded-full w-full my-8 xl:my-0">
           <input
             ref={search}
             type="text"
