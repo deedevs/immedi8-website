@@ -12,20 +12,20 @@ const Header = () => {
   return (
     //  transition-all duration-5000 ease-in-out delay-300
     <div className="relative w-full h-screen">
-      {/* <video
+      <video
         className="w-full h-screen object-cover absolute top-0 left-0"
-        src={heroVid2}
+        src={heroVid}
         autoPlay
         loop
         muted
-      ></video> */}
-      {/* <div className="h-screen w-full absolute top-0 left-0 bg-slate-600/60"></div> */}
+      ></video>
+      <div className="h-screen w-full absolute top-0 left-0 bg-slate-600/60"></div>
       {/* absolute inset-x-0 top-0 z-50 */}
       <header className="w-full h-full">
         <NavBar />
-        {/* <Ratesmarquee /> */}
-        {/* <Hero /> */}
-        <Hero2 />
+        <Ratesmarquee />
+        <Hero />
+        {/* <Hero2 /> */}
       </header>
     </div>
   );

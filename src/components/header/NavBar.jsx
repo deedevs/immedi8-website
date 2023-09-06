@@ -21,7 +21,7 @@ const NavBar = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (nav.current && window.pageYOffset >= nav.current.offsetHeight) {
-        console.log(nav.current.offsetHeight);
+        // console.log(nav.current.offsetHeight);
         nav.current.classList.add(
           "bg-white",
           "fixed",
@@ -88,7 +88,6 @@ const NavBar = () => {
             type="button"
             className=" inline-flex items-center justify-center rounded-md  text-gray-700"
             onClick={() => {
-              console.log("first");
               setMobileMenuOpen(true);
             }}
           >

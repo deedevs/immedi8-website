@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { RatesContext } from "../ratesContext/RatesProvider";
 import Marquee from "react-fast-marquee";
 
 const Ratesmarquee = () => {
+  const data = useContext(RatesContext);
+  console.log(data);
   return (
     <Marquee
       className="h-14 bg-transparent text-white font-extrabold text-xl pt-8 md:pt-0 hidden xl:visible"

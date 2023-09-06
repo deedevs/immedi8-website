@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 // import Header from "./components/Header";
+import { RatesProvider } from "./ratesContext/RatesProvider";
 import Header from "./components/header/Header";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
@@ -39,22 +40,24 @@ function App() {
   }, []);
 
   return (
-    <div className="w-full overflow-x-hidden font-poppins">
-      {/* <NavBar /> */}
-      {/* <Marquee /> */}
-      <Header />
-      <Transfer />
-      <About />
-      {/* <Products /> */}
-      <Services />
-      <Procedures />
-      <WhyUs />
-      <Contact />
-      <Download />
-      <Regulators />
-      <FAQ />
-      <Testimonial />
-    </div>
+    <RatesProvider>
+      <div className="w-full overflow-x-hidden font-poppins">
+        {/* <NavBar /> */}
+        {/* <Marquee /> */}
+        <Header />
+        <Transfer />
+        <About />
+        {/* <Products /> */}
+        <Services />
+        <Procedures />
+        <WhyUs />
+        <Contact />
+        <Download />
+        <Regulators />
+        <FAQ />
+        <Testimonial />
+      </div>
+    </RatesProvider>
   );
 }
 

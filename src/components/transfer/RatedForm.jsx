@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { RatesContext } from "../../ratesContext/RatesProvider";
 
 const RatesForm = () => {
   const [senderCurrency, setSenderCurrency] = useState("");
@@ -7,6 +8,9 @@ const RatesForm = () => {
 
   const [amountToSend, setAmountToSend] = useState("");
   const [amountToRecieve, setAmountToRecieve] = useState("");
+
+  const { data } = useContext(RatesContext);
+  data.fees.forEach(() => {});
 
   const handleDeliveryMethodChange = (e) => setDeliveryMethod(e.target.value);
   const handleSenderCurrencyChange = (e) => setSenderCurrency(e.target.value);

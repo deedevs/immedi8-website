@@ -24,20 +24,21 @@ const Hero = () => {
   return (
     // xl:px-52 md:px-14 px-5 py-8 md:py-24 lg:py-60 xl:py-24 h-auto w-full absolute top-8 md:top-0 xl:top-24
 
+    // 2xl:px-52 xl:px-24 md:px-14 px-5  w-full absolute top-0 my-44 lg:my-52 2xl:my-80
     // new  xl:px-52 md:px-14 px-5 h-[70vh] w-full absolute top-0 py-44 lg:py-80 xl:py-72
-    <div className="2xl:px-52 xl:px-24 md:px-14 px-5  w-full absolute top-0 my-44 lg:my-52 2xl:my-80">
+    <div className="2xl:px-52 xl:px-24 md:px-14 px-5 w-full absolute top-0 my-[280px] md:my-[300px] lg:my-[400px] ">
       <div className="lg:flex w-full lg:gap-x-16">
-        <div className=" lg:w-full text-center lg:text-left">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl text-blue-950 font-bold mb-2 md:pb-5 capitalize">
+        <div className=" lg:w-full text-center lg:text-left 2xl:mt-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl text-blue-950 font-extrabold mb-2 md:pb-5 capitalize">
             Financial Services at your disposal
           </h2>
-          <p className="leading-6 text-base md:text-2xl text-blue-950">
+          <p className="leading-6 text-base md:text-2xl font-extrabold text-blue-950">
             Payment Service Simplified.
           </p>
-          <p className="leading-6 text-base md:text-2xl  text-blue-950 my-3">
+          <p className="leading-6 text-base md:text-2xl font-extrabold text-blue-950 my-3">
             Mobile Money Reinvented.
           </p>
-          <p className="leading-6 text-base md:text-2xl  text-blue-950 my-3">
+          <p className="leading-6 text-base md:text-2xl font-extrabold text-blue-950 my-3">
             Remittance Untangled.
           </p>
           <div>
@@ -67,7 +68,7 @@ const Hero = () => {
         </div>
         {/* py-2 mx-auto  pt-10 */}
         {/* new  py-6 mx-auto  pt-20*/}
-        <div className=" py-10 md:py-36 mx-auto pt-8 md:pt-20 lg:pt-2 xl:pt-0">
+        <div className=" py-10 md:py-36 mx-auto pt-8 md:pt-20 lg:pt-2 xl:pt-0 2xl:mt-10">
           <div className="lg:w-full w-full mx-auto mb-5">
             <img
               src={mobileView}
