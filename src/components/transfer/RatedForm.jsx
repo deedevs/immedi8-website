@@ -45,8 +45,11 @@ const RatesForm = () => {
       });
     }
     if (serviceFee && exchangeRate) {
-      let result = (amountToSend - serviceFee) * exchangeRate;
-      result && setAmountToRecieve(result.toFixed(2));
+      let result = (
+        (amountToSend - serviceFee) *
+        exchangeRate
+      ).toLocaleString();
+      result && setAmountToRecieve(result);
     }
   };
 

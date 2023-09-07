@@ -1,4 +1,5 @@
 import React from "react";
+// import Form from "./Form";
 import android from "../../assets/googleIcon.svg";
 import iOS from "../../assets/appleIcon.svg";
 import ReactGA from "react-ga";

@@ -19,11 +19,12 @@ const Transfer = () => {
             Sending money is not rocket science, <br /> It should be cheap and
             hastle free. <br /> Check our rates now.
           </p>
-          <p className="leading-6 text-base md:text-lg lg:text-3xl font-bold my-1 md:my-3">
-            Sign Up For A Free Account
-          </p>
+
           <div>
-            <div className="mt-4 ">
+            <div className="mt-10">
+              <p className="leading-6 text-base md:text-lg lg:text-3xl font-bold my-1 md:my-3">
+                Sign Up For A Free Account
+              </p>
               <form action="#" className="w-full 2xl:w-2/3 mx-auto lg:mx-0">
                 <div className="w-full flex align-middle">
                   <input

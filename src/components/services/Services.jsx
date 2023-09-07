@@ -2,8 +2,10 @@ import React from "react";
 import ServiceCard from "./ServiceCard";
 import cash from "../../assets/cash.png";
 import payment from "../../assets/payment.png";
+import cart from "../../assets/icons/cart.png";
 import wallet from "../../assets/wallet.png";
 import bankDeposit from "../../assets/bankDeposit.png";
+import shoping_cart from "../../assets/icons/shoping-cart.png";
 import SectionHeader from "../SectionHeader";
 
 const Services = () => {
@@ -35,8 +37,11 @@ const Services = () => {
             Using our Imoney App, Your money is delivered as you send.
             <br /> We are fast, very fast
           </p>
-          <div className="py-10 text-white">
-            <h4 className="text-center text-xl font-semibold ">We Accept</h4>
+          {/* <p className="">We accept</p> */}
+          <div className="py-10 text-black">
+            <h4 className="text-center text-xl font-semibold py-6">
+              We Accept
+            </h4>
             <div className=" w-full lg:w-[80%] mx-auto space-y-6 md:space-y-0 md:flex justify-between md:gap-6 pt-3 align-middle">
               <div className="w-full text-center md:w-[25%] py-3 px-6 lg:py-6 lg:px-10 rounded-lg bg-[#b90000] text-white text-base lg:text-lg font-semibold hover:bg-white hover:text-[#b90000]">
                 Debit Card
@@ -70,23 +75,23 @@ const Services = () => {
           <ServiceCard
             icon={wallet}
             heading="Mobile Money / eWallet"
-            content="We Provide Payments to our mobile Wallet and in to our  Integrated E-Wallet Partners."
+            content="We can deliver Payments into our integrated mobile Wallet partners around the world."
           />
           <ServiceCard
             icon={wallet}
             heading="Electricity Purchase"
-            content="We Provide Payments to our mobile Wallet and in to our  Integrated E-Wallet Partners."
+            content="We Provide electricity power vending through our integrated super Mobile App."
           />
           <ServiceCard
             icon={payment}
             heading="Mobile AirTime"
-            content="We Can Deposit in to Over 1,000 Banks Around The  World"
+            content="We provide Mobile AirTime vending. We are connected to many GSM providers around the world."
           />
 
           <ServiceCard
-            icon={cash}
+            icon={cart}
             heading="Buy Goods & Services"
-            content="Our E-Payment Solution and Integrated Serfvices, Offers Quick Online Payment for Goods& Services, Utility Bills, Mobile Top-Ups."
+            content="Our E-Payment Solution and Integrated Services, Offers Quick Online Payment for Goods & Services, Utility Bills, Mobile Top-Ups."
           />
         </div>
       </div>

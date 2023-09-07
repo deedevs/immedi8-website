@@ -49,7 +49,7 @@ const Services = () => {
           <ServiceCard
             icon={wallet}
             heading="Mobile Money E-Wallet"
-            content="We Provide Payments to our mobile Wallet and in to our  Integrated E-Wallet Partners."
+            content="We can deliver Payments into our integrated mobile Wallet partners around the world."
           />
           <ServiceCard
             icon={cash}
