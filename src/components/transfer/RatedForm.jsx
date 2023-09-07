@@ -3,14 +3,52 @@ import { RatesContext } from "../../ratesContext/RatesProvider";
 
 const RatesForm = () => {
   const [senderCurrency, setSenderCurrency] = useState("");
-  //   const [receiverCurrency, setReceiverCurrency] = useState("");
-  const [deliveryMethod, setDeliveryMethod] = useState("");
+  const [receiverCurrency, setReceiverCurrency] = useState("GMD");
+  // const [deliveryMethod, setDeliveryMethod] = useState("");
 
   const [amountToSend, setAmountToSend] = useState("");
   const [amountToRecieve, setAmountToRecieve] = useState("");
 
-  const { data } = useContext(RatesContext);
-  data.fees.forEach(() => {});
+  const [fee, setFee] = useState();
+  const [rate, setRate] = useState();
+
+  const data = useContext(RatesContext);
+
+  // console.log(data && data);
+
+  const calculateValue = () => {
+    let serviceFee;
+    let exchangeRate;
+    if (data) {
+      data?.data.fees.forEach((fee) => {
+        if (
+          fee.from_currency === senderCurrency &&
+          fee.to_currency === receiverCurrency
+        ) {
+          fee.fee_ranges.forEach((range) => {
+            if (amountToSend <= range.range_to) {
+              serviceFee = range.range_charges;
+              setFee(serviceFee);
+            }
+          });
+        }
+      });
+
+      data.data.rates.forEach((rate) => {
+        if (
+          rate.from_currency === senderCurrency &&
+          rate.to_currency === receiverCurrency
+        ) {
+          exchangeRate = rate.to_currency_rate;
+          setRate(exchangeRate);
+        }
+      });
+    }
+    if (serviceFee && exchangeRate) {
+      let result = (amountToSend - serviceFee) * exchangeRate;
+      result && setAmountToRecieve(result.toFixed(2));
+    }
+  };
 
   const handleDeliveryMethodChange = (e) => setDeliveryMethod(e.target.value);
   const handleSenderCurrencyChange = (e) => setSenderCurrency(e.target.value);
@@ -19,13 +57,21 @@ const RatesForm = () => {
     const inputAmount = event.target.value;
     setAmountToSend(inputAmount);
 
-    if (!isNaN(inputAmount.trim())) {
-      const calculatedResult = parseFloat(inputAmount) * 70;
-      setAmountToRecieve(calculatedResult.toFixed(2));
-    } else {
-      setAmountToRecieve("");
-      setAmountToSend("");
-    }
+    // if (!isNaN(inputAmount.trim())) {
+    //   const calculatedResult = parseFloat(inputAmount) * 70;
+    //   setAmountToRecieve(calculatedResult.toFixed(2));
+    // } else {
+    //   setAmountToRecieve("");
+    //   setAmountToSend("");
+    // }
+  };
+
+  const handleReset = () => {
+    setAmountToRecieve("");
+    setAmountToSend("");
+    setSenderCurrency("");
+    setFee("");
+    setRate("");
   };
 
   return (
@@ -46,16 +92,18 @@ const RatesForm = () => {
               <div className="w-1/2">
                 <select
                   name="senderCountry"
+                  value={senderCurrency}
                   id=""
                   className="w-full leading-3 p-2.5 outline-none text-black"
                   onChange={handleSenderCurrencyChange}
                 >
+                  <option disabled hidden selected></option>
                   <option value="GBP">United Kingdom - GBP</option>
+                  <option value="MAD">Morocco - MAD</option>
                   <option value="USD">United States - USD</option>
                   <option value="EUR">European Union - EUR</option>
                   <option value="SEK">Sweden - SEK</option>
                   <option value="DKK">Denmark - DKK</option>
-                  <option value="GBP">United Kingdom - GBP</option>
                 </select>
               </div>
             </div>
@@ -82,9 +130,9 @@ const RatesForm = () => {
           </div>
           {/* <div>
           </div> */}
-
-          <div className="lg:flex justify-between">
-            {/* <div className="lg:flex-1">
+          {amountToRecieve && (
+            <div className="lg:flex justify-between py-3">
+              {/* <div className="lg:flex-1">
               <label htmlFor="">Choose Delivery Method</label>
               <div className="w-full">
                 <div className="w-full">
@@ -151,32 +199,47 @@ const RatesForm = () => {
                   
               </div>
             </div> */}
-            <div className="lg:text-left">
-              {amountToRecieve ? (
+              {/* <div className="w-full flex justify-between"> */}
+
+              <div>
                 <div>
-                  <h3 className="text-white">Rate and Fees</h3>
+                  <h3 className="">Rate and Fee</h3>
 
                   <li>
-                    <span>Rate: {senderCurrency}</span> <span>1</span> ={" "}
-                    <span>GMD</span> <span>75.45</span>
+                    Rate:
+                    <span className="text-red-600">
+                      {" "}
+                      1{" " + senderCurrency + " "} = {rate} GMD
+                    </span>
                   </li>
 
                   <li>
-                    <span>Fee: {senderCurrency}</span>
-                    <span>GMD</span> <span>75.45</span>
+                    Fee:
+                    <span className="text-red-600">
+                      {" "}
+                      {fee + " "}
+                      {senderCurrency}
+                    </span>
                   </li>
                 </div>
-              ) : (
-                ""
-              )}
+              </div>
+              <div>
+                <button
+                  className="py-1 px-3 bg-[#b90000] rounded text-slate-50 hover:bg-[#6e1b1b]"
+                  onClick={handleReset}
+                >
+                  Reset
+                </button>
+              </div>
             </div>
-          </div>
-          <div className="w-full">
+          )}
+          <div className="w-full pt-5">
             <button
-              type="submit"
-              className="w-full bg-[#b90000] text-white rounded-md border-none outline-none py-2 font-semibold tracking-wider"
+              type="button"
+              className="w-full bg-green-900 hover:bg-green-950 text-white rounded-md border-none outline-none py-2 font-semibold tracking-wider"
+              onClick={calculateValue}
             >
-              Send
+              Calculate
             </button>
           </div>
         </form>

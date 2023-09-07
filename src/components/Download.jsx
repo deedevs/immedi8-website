@@ -42,7 +42,12 @@ export const Download = () => {
           </div>
         </div>
         <div className="lg:w-1/2 mx-auto">
-          <img src={mobile} alt="" srcSet="" className="w-full h-[550px]" />
+          <img
+            src={mobile}
+            alt=""
+            srcSet=""
+            className="w-full h-[550px] object-contain"
+          />
           <div className="flex items-center space-x-6 w-1/2 lg:w-full mx-auto py-10">
             <a
               href="https://play.google.com/store/apps/details?id=com.immedi8moneymt"

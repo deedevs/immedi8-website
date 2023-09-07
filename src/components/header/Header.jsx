@@ -21,9 +21,9 @@ const Header = () => {
       ></video>
       <div className="h-screen w-full absolute top-0 left-0 bg-slate-600/60"></div>
       {/* absolute inset-x-0 top-0 z-50 */}
+      <NavBar />
+      <Ratesmarquee />
       <header className="w-full h-full">
-        <NavBar />
-        <Ratesmarquee />
         <Hero />
         {/* <Hero2 /> */}
       </header>

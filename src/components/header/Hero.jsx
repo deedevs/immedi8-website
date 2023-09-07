@@ -1,19 +1,9 @@
 import React from "react";
-// import Form from "./Form";
 import android from "../../assets/googleIcon.svg";
 import iOS from "../../assets/appleIcon.svg";
 import ReactGA from "react-ga";
-// import RatesForm from "./RatesForm";
-// import mobile from "../assets/mobile_app.gif";
 import mobileView from "../../assets/mobile-view.png";
-// import mobile1 from "../assets/newImg.jpeg";
-// import mobile1 from "../assets/newImg1.png";
-// import mobile1 from "../assets/newHeroImg.png";
 
-// import mobile1 from "../assets/mobile_design.gif";
-// import mobile1 from "../assets/mobile-design1.gif";
-
-// import video1 from "../assets/vidoe1.mp4";
 const Hero = () => {
   const handleEvent = (event) => {
     ReactGA.event({
@@ -26,9 +16,11 @@ const Hero = () => {
 
     // 2xl:px-52 xl:px-24 md:px-14 px-5  w-full absolute top-0 my-44 lg:my-52 2xl:my-80
     // new  xl:px-52 md:px-14 px-5 h-[70vh] w-full absolute top-0 py-44 lg:py-80 xl:py-72
-    <div className="2xl:px-52 xl:px-24 md:px-14 px-5 w-full absolute top-0 my-[280px] md:my-[300px] lg:my-[400px] ">
+    // w-full 2xl:px-52 xl:px-24 md:px-14 px-5 absolute top-[320px] lg:top-[380px]
+
+    <div className="w-full h-full 2xl:px-52 xl:px-24 md:px-14 px-5 absolute top-0 my-[280px] md:my-[300px] lg:my-[225px] xl:my-[225px] 2xl:my-[400px]">
       <div className="lg:flex w-full lg:gap-x-16">
-        <div className=" lg:w-full text-center lg:text-left 2xl:mt-16">
+        <div className="lg:w-full text-center lg:text-left 2xl:mt-16 ">
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl text-blue-950 font-extrabold mb-2 md:pb-5 capitalize">
             Financial Services at your disposal
           </h2>

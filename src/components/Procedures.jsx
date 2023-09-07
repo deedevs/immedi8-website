@@ -15,43 +15,6 @@ const Procedures = () => {
           simple and fast with three easy steps
         </p>
 
-        {/* <div className="flex justify-around items-center py-8">
-          <div className="flex flex-col justify-around items-center ">
-            <div className="w-20 h-20 rounded-full bg-white flex justify-center items-center text-black">
-              1
-            </div>
-            <div className="py-4">
-              <h4 className="text-2xl leading-5 tracking-wider">
-                Enter Amount
-              </h4>
-            </div>
-          </div>
-          <hr className="text-white" />
-          <div>
-            <div className=" flex flex-col justify-around items-center ">
-              <div className="w-20 h-20 rounded-full bg-white flex justify-center items-center text-black">
-                2
-              </div>
-              <div className="py-4">
-                <h4 className="text-2xl leading-5 tracking-wider">
-                  Enter Amount
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className=" flex flex-col justify-around items-center">
-              <div className="w-20 h-20 rounded-full bg-white flex justify-center items-center text-black">
-                3
-              </div>
-              <div className="py-4">
-                <h4 className="text-2xl leading-5 tracking-wider">
-                  Enter Amount
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <div className="md:flex items-center w-full py-14">
           <div className="w-full md:w-80 h-[200px]  shadow-lg shadow-[#080145] p-3 border-slate-200 rounded-lg bg-[#080145]">
             <div className="w-16 h-16 lg:w-24 lg:h-24 mx-auto mt-4 p-3 rounded-full bg-white">
@@ -61,7 +24,7 @@ const Procedures = () => {
               <p>Enter Amount</p>
             </div>
           </div>
-          <div className="h-10 w-1 mx-auto md:w-[213px] md:h-0.5 bg-[#080145] "></div>
+          <div className="h-10 w-1 mx-auto md:w-[213px] md:h-0.5 xl:w-[450px] bg-[#080145] "></div>
           <div className="w-full md:w-80 h-[200px]  shadow-lg shadow-[#080145] p-3 border-slate-200 rounded-lg bg-[#080145]">
             <div className="w-16 h-16 lg:w-24 lg:h-24 mx-auto mt-4 p-3 rounded-full bg-white">
               <img src={users} alt="" className="w-full h-full" />
@@ -70,7 +33,7 @@ const Procedures = () => {
               <p>Select Beneficiary</p>
             </div>
           </div>
-          <div className="h-10 w-1 mx-auto md:w-[213px] md:h-0.5 bg-[#080145] "></div>
+          <div className="h-10 w-1 mx-auto md:w-[213px] md:h-0.5 xl:w-[450px] bg-[#080145] "></div>
           <div className="w-full md:w-80 h-[200px]   shadow-lg shadow-[#080145] p-3 border-slate-200 rounded-lg bg-[#080145]">
             <div className="w-16 lg:w-24 h-16 lg:h-24 mx-auto mt-4 p-3 rounded-full bg-white">
               <img src={payment} alt="" className="w-full h-full" />
