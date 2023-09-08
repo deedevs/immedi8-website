@@ -2,7 +2,7 @@ import React from "react";
 import PrimaryBtn from "./PrimaryBtn";
 import careerImg from "../assets/career.jpg";
 
-const CareerHero = () => {
+const RecruitmentHero = () => {
   return (
     <div className="bg-gradient-to-r from-[#1c2e4a] to-red-600 lg:px-52 md:px-14 px-5 pt-8 pb-5 h-full ">
       <div className="md:flex w-full md:gap-x-24">
@@ -27,4 +27,4 @@ const CareerHero = () => {
   );
 };
 
-export default CareerHero;
+export default RecruitmentHero;

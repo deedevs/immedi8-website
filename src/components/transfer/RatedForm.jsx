@@ -78,8 +78,10 @@ const RatesForm = () => {
   };
 
   return (
-    <div className="max-w-[700px] w-full bg-white shadow-md rounded-3xl border-lime-100 p-6">
-      {/* <h3 className="text-[#121e31]  text-xl text-center">Make a Transfer</h3> */}
+    <div className="max-w-[800px] w-full bg-white shadow-md rounded-3xl border-lime-100 p-10">
+      <h3 className="text-[#080145] font-bold text-3xl pb-6 text-center">
+        Check Our Rates And Fees
+      </h3>
       <div className="w-full h-auto">
         <form action="#" className="space-y-2 text-[#121e31]">
           <div>

@@ -14,10 +14,12 @@ const Ratesmarquee = () => {
       <div className="flex gap-8 mr-8 items-center">
         {/* <h2 className="text-white">Rates:</h2>
         <br /> */}
-        {data?.data?.rates.map((rate) =>
+        {data?.data?.rates.map((rate, index) =>
           rate.country_from !== "Gambia The" &&
           rate.country_to === "Gambia The" ? (
-            <span>{rate.from_currency + ": " + rate.to_currency_rate}</span>
+            <span key={index}>
+              {rate.from_currency + ": " + rate.to_currency_rate}
+            </span>
           ) : (
             ""
           )

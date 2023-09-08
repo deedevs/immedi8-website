@@ -7,7 +7,7 @@
   background-blend-mode: overlay;
 }
 .screen {
-  height: calc(100vh - 225px);
+  height: calc(100vh - 30%);
 }
 
 .octa {

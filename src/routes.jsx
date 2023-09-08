@@ -14,16 +14,18 @@ import Privacy from "./pages/Privacy";
 import RefundPolicy from "./pages/RefundPolicy";
 import ComplaintPolicy from "./pages/ComplaintPolicy";
 import Layout from "./layout/Layout";
-import CareerLayout from "./layout/CareerLayout";
+import RecruitmentLayout from "./layout/RecruitmentLayout";
 import CareerPost from "./pages/CareerPost";
+import BecomeAnAgent from "./pages/BecomeAnAgent";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<App />} />
-      <Route path="career" element={<CareerLayout />}>
-        <Route path="post" element={<Career />} />
-        <Route path="post/:id" element={<CareerPost />} />
+      <Route path="recruitment" element={<RecruitmentLayout />}>
+        <Route path="become-an-agent" element={<BecomeAnAgent />} />
+        <Route path="career" element={<Career />} />
+        <Route path="career/:id" element={<CareerPost />} />
       </Route>
       <Route path="docs" element={<Layout />}>
         <Route path="policy" element={<Policy />} />

@@ -18,6 +18,7 @@ const TrackTransaction = ({ className }) => {
       <form action="#">
         <div className="border flex rounded-full w-full my-8 xl:my-0">
           <input
+            disabled
             ref={search}
             type="text"
             placeholder="Track transaction"

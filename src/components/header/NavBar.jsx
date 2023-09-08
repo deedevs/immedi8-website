@@ -12,7 +12,7 @@ const navigation = [
   { name: "Services", to: "Services" },
   { name: "Contact", to: "Contact" },
   { name: "FAQ", to: "FAQ" },
-  { name: "Become an Agent", to: "#" },
+  // { name: "Become an Agent", to: "#" },
 ];
 
 const NavBar = () => {
@@ -65,19 +65,27 @@ const NavBar = () => {
               key={item.name}
               to={item.to}
               isDynamic={true}
-              className="text-base cursor-pointer font-semibold leading-6 text-[#080145] hover:text-red-600"
+              className="text-lg cursor-pointer font-semibold leading-6 text-[#080145] hover:text-red-600"
             >
               {item.name}
             </Link>
           ))}
+          <li className="list-none">
+            <a
+              href="/recruitment/become-an-agent"
+              className="hover:text-red-600 cursor-pointer text-lg font-semibold leading-6 text-[#080145]"
+            >
+              Become an Agent
+            </a>
+          </li>
           {/* <li className="list-none">
-        <a
-          href="/career/post"
-          className="hover:text-red-600 cursor-pointer text-base font-semibold leading-6 text-[#080145]"
-        >
-          Career
-        </a>
-      </li> */}
+            <a
+              href="/recruitment/career"
+              className="hover:text-red-600 cursor-pointer text-base font-semibold leading-6 text-[#080145]"
+            >
+              Career
+            </a>
+          </li> */}
         </div>
         <LoginBtn
           className="hidden md:block mt-[16px] bg-[#080145] text-white"
@@ -159,12 +167,20 @@ const NavBar = () => {
                     duration={1000}
                     key={item.name}
                     to={item.to}
-                    className="-mx-3 cursor-pointer block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#080145] hover:bg-gray-300"
+                    className="-mx-3 cursor-pointer block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-[#080145] hover:bg-gray-300"
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                   >
                     {item.name}
                   </Link>
                 ))}
+                <li className="list-none">
+                  <a
+                    href="/recruitment/become-an-agent"
+                    className="-mx-3 cursor-pointer block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-[#080145] hover:bg-gray-300"
+                  >
+                    Become an Agent
+                  </a>
+                </li>
                 {/* <li className="list-none">
               <a
                 href="/career/post"
