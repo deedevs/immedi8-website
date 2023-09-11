@@ -16,14 +16,12 @@ export const Download = () => {
               </h4> */}
               {/* </div> */}
               <p className="py-10 text-xl">
-                Thank you for being a valued member of our community. We believe
-                that our mobile apps will enhance your experience and provide
-                you with even more value. Don't miss out on this.
+                You can access our App using any of this devices.
               </p>
               <h3 className="text-2xl lg:text-5xl font-bold text-green-700 mb-4">
-                Download our Apps
+                Get Started Now
               </h3>
-              <form action="#" className="w-full 2xl:w-2/3 mx-auto lg:mx-0">
+              {/* <form action="#" className="w-full 2xl:w-2/3 mx-auto lg:mx-0">
                 <div className="w-full flex align-middle">
                   <input
                     type="text"
@@ -37,7 +35,7 @@ export const Download = () => {
                     Get Started
                   </button>
                 </div>
-              </form>
+              </form> */}
             </div>
           </div>
         </div>

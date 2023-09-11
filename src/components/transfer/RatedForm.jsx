@@ -51,6 +51,8 @@ const RatesForm = () => {
       ).toLocaleString();
       result && setAmountToRecieve(result);
     }
+
+    return;
   };
 
   const handleDeliveryMethodChange = (e) => setDeliveryMethod(e.target.value);
@@ -239,13 +241,17 @@ const RatesForm = () => {
             </div>
           )}
           <div className="w-full pt-5">
-            <button
-              type="button"
-              className="w-full bg-green-900 hover:bg-green-950 text-white rounded-md border-none outline-none py-2 font-semibold tracking-wider"
-              onClick={calculateValue}
-            >
-              Calculate
-            </button>
+            {amountToSend && senderCurrency ? (
+              <button
+                type="button"
+                className="w-full bg-green-900 hover:bg-green-950 text-white rounded-md border-none outline-none py-2 font-semibold tracking-wider"
+                onClick={calculateValue}
+              >
+                Calculate
+              </button>
+            ) : (
+              ""
+            )}
           </div>
         </form>
       </div>
