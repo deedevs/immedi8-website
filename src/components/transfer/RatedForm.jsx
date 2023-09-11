@@ -52,8 +52,7 @@ const RatesForm = () => {
       result && setAmountToRecieve(result);
     }
 
-    setAmountToSend("");
-    setSenderCurrency("");
+    return;
   };
 
   const handleDeliveryMethodChange = (e) => setDeliveryMethod(e.target.value);
