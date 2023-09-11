@@ -18,30 +18,30 @@ const navigation = [
 const NavBar = () => {
   const nav = useRef();
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (nav.current && window.pageYOffset >= nav.current.offsetHeight) {
-        // console.log(nav.current.offsetHeight);
-        nav.current.classList.add(
-          "bg-white",
-          "fixed",
-          "top-0",
-          "text-black",
-          "w-full",
-          "z-[100]"
-        );
-      } else if (nav.current && window.pageYOffset < nav.current.offsetHeight) {
-        nav.current.classList.remove(
-          "bg-white",
-          "fixed",
-          "top-0",
-          "text-black",
-          "w-full",
-          "z-[100]"
-        );
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     if (nav.current && window.pageYOffset >= nav.current.offsetHeight) {
+  //       // console.log(nav.current.offsetHeight);
+  //       nav.current.classList.add(
+  //         "bg-white",
+  //         "fixed",
+  //         "top-0",
+  //         "text-black",
+  //         "w-full",
+  //         "z-[100]"
+  //       );
+  //     } else if (nav.current && window.pageYOffset < nav.current.offsetHeight) {
+  //       nav.current.classList.remove(
+  //         "bg-white",
+  //         "fixed",
+  //         "top-0",
+  //         "text-black",
+  //         "w-full",
+  //         "z-[100]"
+  //       );
+  //     }
+  //   });
+  // }, []);
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (

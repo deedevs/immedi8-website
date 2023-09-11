@@ -82,7 +82,7 @@ const AgentForm = () => {
       <form
         ref={form}
         onSubmit={handleSubmit}
-        className="bg-transparent space-y-5 shadow-md rounded p-6 w-[700px] mx-auto my-12"
+        className="bg-transparent space-y-5 shadow-xl rounded p-6 w-[700px] mx-auto my-12"
       >
         <div>
           <h3 className="text-center text-3xl font-bold py-6 text-red-600">

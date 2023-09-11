@@ -6,8 +6,132 @@
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
 }
-.screen {
-  height: calc(100vh - 30%);
+.position {
+  margin-top: 20%;
+}
+@media (min-width: 1535px) {
+  .position {
+    margin-top: 10% !important;
+  }
+  .screenshot {
+    margin-top: 0px !important;
+  }
+}
+@media (min-width: 1024px) and (max-height: 1050px) {
+  .position {
+    margin-top: 0% !important;
+  }
+
+  .screenshot {
+    margin-top: 0px !important;
+  }
+}
+@media (max-width: 1180px) and (max-height: 1000px) {
+  .position {
+    margin-top: 0% !important;
+  }
+  .position div:first-child h2 {
+    font-size: 42px !important;
+    margin-top: 0 !important;
+  }
+  .position div:first-child div:first-child form input {
+    padding: 15px 10px !important;
+  }
+
+  .screenshot {
+    margin-top: 0px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1535px) {
+  .position {
+    margin-top: 18% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-height: 1050px) {
+  .position {
+    margin-top: 2% !important;
+  }
+  .screenshot {
+    margin-top: 10px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (max-height: 1200px) {
+  .position {
+    margin-top: 10% !important;
+  }
+  .position div div {
+    margin-top: 50px;
+  }
+}
+@media (width: 768px) and (height: 1024px) {
+  .position {
+    margin-top: 0 !important;
+  }
+  .position div div {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 540px) and (max-height: 740px) {
+  .position {
+    margin-top: 20% !important;
+  }
+  .position div div {
+    margin-top: 30px;
+  }
+  .screenshot {
+    display: none !important;
+  }
+}
+@media (max-width: 920px) and (max-height: 415px) {
+  .position {
+    margin-top: 1% !important;
+  }
+  .position div:first-child {
+    margin-top: 0 !important;
+  }
+  .position div:first-child h2 {
+    font-size: 32px;
+    padding-bottom: 0 !important;
+  }
+  .position div:first-child p {
+    font-size: 18px;
+    margin-top: 0 !important;
+  }
+  .position div:first-child form input {
+    padding: 8px !important;
+  }
+  .screenshot {
+    display: none !important;
+  }
+}
+
+@media (max-width: 667px) and (max-height: 376px) {
+  .position {
+    margin-top: 2.5% !important;
+  }
+  .position div:first-child h2 {
+    font-size: 32px;
+    padding-bottom: 0 !important;
+  }
+  .position div:first-child p {
+    font-size: 18px;
+    margin-top: 0 !important;
+  }
+  .position div:first-child form {
+    display: none !important;
+  }
+  .screenshot {
+    display: none !important;
+  }
+}
+@media (min-width: 380px) and (max-width: 420px) and (min-height: 840px) {
+  .position {
+    margin-top: 10% !important;
+  }
 }
 
 .octa {
