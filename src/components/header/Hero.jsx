@@ -27,7 +27,7 @@ const Hero = () => {
           <p className="leading-6 text-lg md:text-3xl font-semibold text-white my-3">
             Remittance Untangled.
           </p>
-          <div>
+          {/* <div>
             <div className="mt-2 md:mt-10 ">
               <form action="#" className="w-full 2xl:w-2/3 mx-auto lg:mx-0">
                 <div className="w-full flex align-middle">
@@ -45,7 +45,7 @@ const Hero = () => {
                 </div>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className=" py-10 md:py-0 mx-auto pt-8 md:pt-0 lg:pt-2 xl:pt-0 2xl:mt-10 screenshot">
           <div className="w-full mx-auto mb-5">

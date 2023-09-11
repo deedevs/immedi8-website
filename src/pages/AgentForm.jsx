@@ -86,7 +86,7 @@ const AgentForm = () => {
       >
         <div>
           <h3 className="text-center text-3xl font-bold py-6 text-red-600">
-            Registeration Form
+            Registration Form
           </h3>
         </div>
         <div
