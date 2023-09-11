@@ -19,8 +19,8 @@ const Hero = () => {
     // w-full 2xl:px-52 xl:px-24 md:px-14 px-5 absolute top-[320px] lg:top-[380px]
 
     <div className="w-full screen 2xl:px-52 xl:px-24 md:px-14 px-5 absolute top-0 my-[280px] md:my-[300px] lg:my-[225px] xl:my-[225px] 2xl:my-[400px]">
-      <div className="lg:flex w-full lg:gap-x-16">
-        <div className="lg:w-full text-center lg:text-left 2xl:mt-16 ">
+      <div className="lg:flex w-full lg:gap-x-16 h-full mt-0 2xl:mt-16 hero">
+        <div className="lg:w-full text-center lg:text-left ">
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-[100px] text-white font-extrabold mb-2 md:pb-5 capitalize">
             Financial Services at your disposal
           </h2>

@@ -272,3 +272,9 @@
     clip: rect(67px, 9999px, 122px, 0);
   }
 }
+
+@media (min-width: 1025px) and (max-width: 1535px) and (height: 1166.25px) {
+  .hero {
+    margin-top: 450px;
+  }
+}

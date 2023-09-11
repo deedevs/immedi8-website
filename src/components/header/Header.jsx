@@ -12,7 +12,6 @@ import Hero2 from "./Hero2";
 
 const Header = () => {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
     await loadSlim(engine);
   }, []);
 

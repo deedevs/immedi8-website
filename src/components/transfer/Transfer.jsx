@@ -7,9 +7,9 @@ const Transfer = () => {
     <div className="bg-[#080145] 2xl:px-52 xl:px-24 md:px-14 px-5   pb-32 h-full clip relative">
       <Payments className="top-[0px] md:top-[0px] left-[5%] md:left-[5%] lg:left-[5%] z-50" />
 
-      <div className="md:flex w-full md:gap-x-24 pt-[335px] 2xl:pt-[450px]">
+      <div className="md:flex w-full md:gap-x-24 pt-[460px] sm:pt-[380px] 2xl:pt-[450px]">
         <div className=" md:w-2/3 py-2 md:py-6 text-center md:text-start text-white">
-          <p className="leading-6 text-lg md:text-5xl font-extrabold  my-3">
+          <p className="leading-6 text-2xl md:text-5xl font-extrabold  my-3">
             Delivered As You Send &#8482;
           </p>
           <p className="leading-6 text-lg md:text-3xl font-bold my-3">

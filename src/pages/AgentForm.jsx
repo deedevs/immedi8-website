@@ -10,41 +10,41 @@ const AgentForm = () => {
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
-  const [comment, setComment] = useState("");
+  // const [comment, setComment] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
 
-  //   const handleSubmit = (event) => {
-  //     event.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-  //     if (validate()) {
-  //       emailjs
-  //         .sendForm(
-  //           "service_3tfkaac",
-  //           "template_q567tib",
-  //           form.current,
-  //           "mknT0HQOxDZMZe2-e"
-  //         )
-  //         .then(
-  //           (result) => {
-  //             setMessage("Thank you for your message!");
-  //             setName("");
-  //             setPhone("");
-  //             setAddress("");
-  //             setEmail("");
-  //             setComment("");
-  //             if (result) {
-  //             }
-  //           },
-  //           (error) => {
-  //             console.log(error.text);
-  //           }
-  //         );
-  //     }
-  //   };
+    if (validate()) {
+      emailjs
+        .sendForm(
+          "service_3tfkaac",
+          "template_q567tib",
+          form.current,
+          "mknT0HQOxDZMZe2-e"
+        )
+        .then(
+          (result) => {
+            setMessage("Thank you for your message!");
+            setName("");
+            setPhone("");
+            setAddress("");
+            setEmail("");
+            // setComment("");
+            if (result) {
+            }
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+  };
   setTimeout(() => {
     setMessage("");
-  }, 5000);
+  }, 60000);
 
   function validate() {
     const errors = {};
@@ -70,9 +70,9 @@ const AgentForm = () => {
       errors.email = "Invalid email address";
     }
 
-    if (!comment.trim()) {
-      errors.comment = "Required";
-    }
+    // if (!comment.trim()) {
+    //   errors.comment = "Required";
+    // }
     setErrors(errors);
 
     return Object.keys(errors).length === 0;
@@ -81,7 +81,7 @@ const AgentForm = () => {
     <div className="w-full">
       <form
         ref={form}
-        //   onSubmit={handleSubmit}
+        onSubmit={handleSubmit}
         className="bg-transparent space-y-5 shadow-md rounded p-6 w-[700px] mx-auto my-12"
       >
         <div>
@@ -90,7 +90,7 @@ const AgentForm = () => {
           </h3>
         </div>
         <div
-          className={`bg-green-400 text-white w-full py-3 ${
+          className={`bg-green-400 text-white w-full py-3 px-2 ${
             message ? "block" : "hidden"
           }`}
         >
@@ -163,7 +163,7 @@ const AgentForm = () => {
           )}
         </div>
 
-        <div>
+        {/* <div>
           <InputLabel labelFor="comment" name="Comment or Message" />
           <textarea
             id="comment"
@@ -178,7 +178,7 @@ const AgentForm = () => {
               {errors.comment}
             </span>
           )}
-        </div>
+        </div> */}
 
         <div className="w-full">
           <button
