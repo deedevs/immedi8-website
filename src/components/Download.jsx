@@ -19,7 +19,7 @@ export const Download = () => {
                 You can access our App using any of this devices.
               </p>
               <h3 className="text-2xl lg:text-5xl font-bold text-green-700 mb-4">
-                Get Start Now
+                Get Started Now
               </h3>
               {/* <form action="#" className="w-full 2xl:w-2/3 mx-auto lg:mx-0">
                 <div className="w-full flex align-middle">
