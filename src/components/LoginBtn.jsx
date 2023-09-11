@@ -1,14 +1,14 @@
 import React from "react";
 
-const LoginBtn = ({ className }) => {
+const LoginBtn = ({ className, line }) => {
   return (
-    <div className="">
+    <div className={`${line} mr-12 xl:mr-0 border-none`}>
       <a
         href="https://app.immedi8money.com"
         target="_blank"
-        className={`py-3 px-10 bg-green-600 border text-lg text-white hover:bg-white hover:text-black hover:border hover:border-red-600 font-semibold rounded-full ${className}`}
+        className={`py-2 px-8 md:px-4 lg:px-6 bg-transparent border text-sm cursor-pointer font-semibold leading-6  hover:bg-red-200 rounded-full hover:text-black hover:border border-[#080145]  ${className}`}
       >
-        <button>Login</button>
+        <button className="text-[#080145]">Login</button>
       </a>
     </div>
   );

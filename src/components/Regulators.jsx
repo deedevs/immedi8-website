@@ -7,31 +7,31 @@ const Regulators = () => {
   return (
     <div
       id="Regulators"
-      className="bg-[#1c2e4a] text-white xl:px-52 md:px-14 px-5 pt-14 pb-24"
+      className="bg-white text-[#080145] xl:px-52 md:px-14 px-5 pt-14 pb-24 clip2"
     >
       <SectionTitle title="Regulators" className="text-center" />
       <div className="md:flex w-full justify-between items-center">
         <div className="md:w-[50%] py-6 text-center md:text-start md:mr-14 md:mt-8 lg:mt-10 xxl:mt-14 space-y-2">
           <SectionHeader heading="Our Regulators" className="uppercase" />
 
-          <p className="text-gray-400 leading-6 text-sm md:text-lg mb-4">
+          <p className="text-[#080145]  leading-6 text-sm md:text-lg mb-4">
             Authorize By the Financial Services Authority, under the Payment
             Services Regulation 2009.
             <span className="text-red-600"> PSD 584027</span> for the Provision
             of Payment Services.
           </p>
 
-          <p className="leading-6 text-sm md:text-lg text-gray-400 mb-4 ">
+          <p className="leading-6 text-sm md:text-lg text-[#080145]  mb-4 ">
             Registered with Her Majesty’s Revenue and Customs (HMRC) for AML and
             Terrorism Financing Regulation. Registration Number{" "}
             <span className="text-red-600">12585462</span>
           </p>
-          <p className="text-gray-400 leading-6 text-sm md:text-lg mb-4">
+          <p className="text-[#080145]  leading-6 text-sm md:text-lg mb-4">
             Registered With Uk Information Commissioner (ICO) for Data
             Protection. Bound by Data Protection Act 1998, Registration Number
             <span className="text-red-600"> Z2158030</span>
           </p>
-          <p className="text-gray-400 leading-6 text-sm md:text-lg mb-4">
+          <p className="text-[#080145]  leading-6 text-sm md:text-lg mb-4">
             Regulated and Authorized By the Central Bank of the Gambia
           </p>
         </div>

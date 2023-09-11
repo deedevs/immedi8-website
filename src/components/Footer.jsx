@@ -6,7 +6,7 @@ import GoToTop from "./GoToTop";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#1c2e4a] lg:px-52 md:px-14 px-5 py-16 text-white">
+      <div className="bg-[#080145] lg:px-52 md:px-14 px-5 py-16 text-white">
         <GoToTop />
         <div className=" w-full text-center">
           <div className="p-4">

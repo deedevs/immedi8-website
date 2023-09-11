@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceCard from "./ServiceCard";
+import ServicesCard from "./services/ServiceCard";
 import cash from "../assets/cash.png";
 import payment from "../assets/payment.png";
 import wallet from "../assets/wallet.png";
@@ -49,7 +49,7 @@ const Services = () => {
           <ServiceCard
             icon={wallet}
             heading="Mobile Money E-Wallet"
-            content="We Provide Payments to our mobile Wallet and in to our  Integrated E-Wallet Partners."
+            content="We can deliver Payments into our integrated mobile Wallet partners around the world."
           />
           <ServiceCard
             icon={cash}

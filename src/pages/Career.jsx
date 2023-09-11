@@ -1,12 +1,12 @@
 import React from "react";
-import CareerHero from "../components/CareerHero";
+import RecruitmentHero from "../components/RecruitmentHero";
 import CareerJobList from "../components/CareerJobList";
 import CareerMission from "../components/CareerMission";
 
 const Career = () => {
   return (
     <div>
-      <CareerHero />
+      <RecruitmentHero />
       {/* <CareerMission /> */}
       <CareerJobList />
     </div>
