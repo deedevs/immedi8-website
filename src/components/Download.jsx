@@ -15,14 +15,14 @@ export const Download = () => {
                 Get Start
               </h4> */}
               {/* </div> */}
-              <p className="py-10 text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem deserunt, sit dicta maiores error totam odit sed iure
-                maxime Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facere dignissimos veniam et enim asperiores nobis aliquam
-                quisquam numquam. Saepe harum enim ad perferendis. Aliquid, eos
-                fugit officiis explicabo eum voluptatem?
+              <p className="py-10 text-xl">
+                Thank you for being a valued member of our community. We believe
+                that our mobile apps will enhance your experience and provide
+                you with even more value. Don't miss out on this.
               </p>
+              <h3 className="text-2xl lg:text-5xl font-bold text-green-700 mb-4">
+                Download our Apps
+              </h3>
               <form action="#" className="w-full 2xl:w-2/3 mx-auto lg:mx-0">
                 <div className="w-full flex align-middle">
                   <input
