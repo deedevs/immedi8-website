@@ -3,6 +3,7 @@ import android from "../../assets/googleIcon.svg";
 import iOS from "../../assets/appleIcon.svg";
 import ReactGA from "react-ga";
 import mobileView from "../../assets/mobile-view.png";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   const handleEvent = (event) => {
@@ -11,14 +12,28 @@ const Hero = () => {
       action: event.action,
     });
   };
+
   return (
     <div className="w-full h-full 2xl:px-52 xl:px-24 md:px-14 px-5 absolute position">
       <div className="lg:flex w-full lg:gap-x-16 h-auto  space-y-12">
         <div className="lg:w-full text-center lg:text-left space-y-3 mb-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-[80px] lg:mt-10 2xl:mt-0 text-white font-extrabold mb-2 md:pb-5 capitalize">
-            Financial Services at your disposal
+            Financial Services at your disposal <br />
+            <span className="text-orange-600">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Payment Service Simplified.",
+                    "Remittance Untangled",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  cursor: "...",
+                }}
+              />
+            </span>
           </h2>
-          <p className="leading-6 text-lg md:text-3xl font-semibold text-white">
+          {/* <p className="leading-6 text-lg md:text-3xl font-semibold text-white">
             Payment Service Simplified.
           </p>
           <p className="leading-6 text-lg md:text-3xl font-semibold text-white my-3">
@@ -26,7 +41,7 @@ const Hero = () => {
           </p>
           <p className="leading-6 text-lg md:text-3xl font-semibold text-white my-3">
             Remittance Untangled.
-          </p>
+          </p> */}
           {/* <div>
             <div className="mt-2 md:mt-10 ">
               <form action="#" className="w-full 2xl:w-2/3 mx-auto lg:mx-0">
