@@ -59,12 +59,12 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) and (max-height: 1200px) {
-  .position {
+  /* .position {
     margin-top: 10% !important;
-  }
-  .position div div {
+  } */
+  /* .position div div {
     margin-top: 50px;
-  }
+  } */
 }
 @media (width: 768px) and (height: 1024px) {
   .position {
