@@ -1,7 +1,7 @@
 import React from "react";
 import RatesForm from "./RatedForm";
 import Payments from "../Payments";
-import transferImg from "../../assets/transfer.jpg";
+import transferImg from "../../assets/transfer.png";
 
 const Transfer = () => {
   return (
@@ -79,8 +79,8 @@ const Transfer = () => {
 
         <div className="flex-1 py-6 my-auto pt-10 md:pt-0">
           <div className="md:w-full w-full">
-            {/* <img src={transferImg} alt="" /> */}
-            <RatesForm />
+            <img src={transferImg} alt="" />
+            {/* <RatesForm /> */}
           </div>
         </div>
       </div>
