@@ -2,7 +2,7 @@ import React from "react";
 
 const TestimonialCard2 = ({ image, name, role, comment }) => {
   return (
-    <div className="mt-16 max-w-[900px] p-8 shadow-md shadow-gray-400 mx-auto">
+    <div className="mt-16 max-w-[400px] p-8 shadow-md shadow-gray-400 mx-auto">
       <div className="w-[80px] h-[80px] md:w-[120px] md:h-[120px] mx-auto ">
         <img
           src={image}

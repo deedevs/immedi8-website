@@ -18,9 +18,9 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full 2xl:px-52 xl:px-24 md:px-14 px-5 absolute position">
+    <div className="w-full 2xl:px-52 xl:px-24 md:px-14 px-5">
       <div className="md:flex w-full md:gap-x-8 space-y-10">
-        <div className="text-center md:text-left mb-6 md:mb-0">
+        <div className="relative text-center md:text-left mb-6 md:mb-0">
           <h2 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-[80px] lg:mt-10 2xl:mt-0 text-white font-extrabold mb-2 md:pb-5 capitalize">
             Financial Services at your disposal <br />
             {/* <span className="text-orange-600">
@@ -38,10 +38,8 @@ const Hero = () => {
             </span> */}
           </h2>
           <p className="text-slate-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            alias enim, velit incidunt assumenda vel? Provident non esse atque
-            magni, tempora, laudantium et, voluptatibus pariatur quo assumenda
-            labore soluta temporibus?
+            Payment Service Simplified. <br />
+            Remittance Untangled.
           </p>
           <div className="w-full flex justify-center align-middle md:justify-start gap-6 mt-8">
             <a
@@ -123,12 +121,29 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className=" py-10 md:py-0 mx-auto  pt-8 md:pt-0 lg:pt-2 xl:pt-0 2xl:mt-10 screenshot">
-          <div className="w-full mx-auto mb-5">
+        <div className="relative py-10 md:py-0 mx-auto  pt-8 md:pt-0 lg:pt-2 xl:pt-0 2xl:mt-10 screenshot">
+          <div className="absolute bottom-25 right-25 w-20 z-10 opacity-5">
+            <svg
+              width="500"
+              height="500"
+              viewBox="0 0 793 792"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{
+                zIndex: "1",
+              }}
+            >
+              <path
+                d="M651.5 95.5C721.5 150.5 772 232 787.5 320C802.5 407.5 782 501.5 730.5 564.5C679 627.5 596.5 660 508.5 703.5C420 746.5 326.5 801 240.5 789.5C154 777.5 75 700.5 35.5 610.5C-4.5 520.5 -5 418.5 10 316.5C25.5 215 56.5 113.5 125 58.5C193 3.5 298 -5.50001 395 3.99999C492.5 13.5 582 41 651.5 95.5Z"
+                fill="#D9E8FF"
+              />
+            </svg>
+          </div>
+          <div className="w-full mx-auto mb-5 z-50">
             <img
               src={mobileView}
               alt=""
-              className="mx-auto mt-[-30px] max-w-[275px] md:max-w-xs xl:max-w-[600px]"
+              className="z-50 mx-auto mt-[-30px] max-w-[275px] md:max-w-xs xl:max-w-[600px]"
             />
           </div>
         </div>

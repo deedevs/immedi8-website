@@ -20,7 +20,7 @@ const Header = () => {
   }, []);
   return (
     //  transition-all duration-5000 ease-in-out delay-300
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen header-gradient">
       {/* <video
         className="w-full h-screen object-cover absolute top-0 left-0"
         src={heroVid}
@@ -30,13 +30,13 @@ const Header = () => {
       ></video> */}
       {/* <div className="h-screen w-full absolute top-0 left-0 bg-slate-600/60"></div> */}
       {/* absolute inset-x-0 top-0 z-50 */}
-      <Particles
+      {/* <Particles
         className="h-full w-full absolute top-0 left-0"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={particlesConfig}
-      />
+      /> */}
       <header className="w-full h-full">
         <NavBar />
         <Ratesmarquee />

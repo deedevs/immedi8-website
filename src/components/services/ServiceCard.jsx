@@ -4,7 +4,7 @@ const ServicesCard = ({ icon, heading, content }) => {
   return (
     <div className="p-5 shadow-lg rounded-md cursor-pointer bg-white text-gray-500 hover:bg-[#080145] hover:text-gray-300">
       <div className="flex flex-col items-start">
-        <div className="w-20 h-20 bg-[#080145] rounded-full flex justify-center align-middle p-3">
+        <div className="w-20 h-20 card-gradient rounded-full flex justify-center align-middle p-3">
           <img src={icon} alt="secure" className="" />
         </div>
         <div className="mt-4">

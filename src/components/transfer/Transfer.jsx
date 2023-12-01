@@ -2,12 +2,24 @@ import React from "react";
 import RatesForm from "./RatedForm";
 import Payments from "../Payments";
 import transferImg from "../../assets/transfer.png";
+import dots7 from "../../assets/instantAssets/dots7.png";
+import dots8 from "../../assets/instantAssets/dot8.png";
+import circle from "../../assets/instantAssets/circle.png";
+import tranferImage from "../../assets/instantAssets/transfer2.jpg";
 
 const Transfer = () => {
   return (
-    <div className="bg-[#080145] 2xl:px-52 xl:px-24 md:px-14 px-5   pb-32 h-full clip relative">
+    <div className="transfer-gradient 2xl:px-52 xl:px-24 md:px-14 px-5   pb-10 h-full  relative">
       <Payments className="top-[0px] md:top-[0px] left-[5%] md:left-[5%] lg:left-[5%] z-50" />
-
+      <div className="absolute right-3 bottom-72 lg:right-20 lg:top-52 w-40">
+        <img src={dots7} alt="7 dots" className="w-full opacity-20" />
+      </div>
+      <div className="absolute right-[40%] bottom-16 w-72 z-0">
+        <img src={dots8} alt="8 dots" className="w-full opacity-20" />
+      </div>
+      <div className="absolute left-20 top-48 w-72 lg:w-96 z-0">
+        <img src={circle} alt="circle" className="w-full opacity-20" />
+      </div>
       <div className="md:flex w-full md:gap-x-24 pt-[460px] sm:pt-[380px] 2xl:pt-[450px]">
         <div className="flex-1 md:w-2/3 py-2 md:py-6 text-center md:text-start text-white">
           <p className="leading-6 text-2xl md:text-5xl font-extrabold  my-3">
@@ -31,7 +43,7 @@ const Transfer = () => {
                   <input
                     type="text"
                     placeholder="Enter your phone number"
-                    className="p-2 md:px-4 md:py-3 rounded-l-3xl  outline-none border border-blue-950 flex-1 w-[90%] lg:w-full"
+                    className="p-2 md:px-4 md:py-3 rounded-l-3xl text-black outline-none border border-blue-950 flex-1 w-[90%] lg:w-full"
                   />
                   <button
                     type="submit"
@@ -78,8 +90,8 @@ const Transfer = () => {
         </div>
 
         <div className="flex-1 py-6 my-auto pt-10 md:pt-0">
-          <div className="md:w-full w-full">
-            <img src={transferImg} alt="" />
+          <div className="md:w-full w-full" data-aos="slide-left">
+            <img src={tranferImage} alt="" />
             {/* <RatesForm /> */}
           </div>
         </div>
