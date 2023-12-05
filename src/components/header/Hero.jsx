@@ -18,10 +18,10 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full 2xl:px-52 xl:px-24 md:px-14 px-5">
+    <div className="w-full 2xl:px-52 xl:px-24 md:px-14 px-5 mt-16 md:mt-44 lg:mt-0 xl:mt-10">
       <div className="md:flex w-full md:gap-x-8 space-y-10">
-        <div className="relative text-center md:text-left mb-6 md:mb-0">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-[80px] lg:mt-10 2xl:mt-0 text-white font-extrabold mb-2 md:pb-5 capitalize">
+        <div className="relative text-center md:text-left mb-4 md:mb-0">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-[80px] lg:mt-10 2xl:mt-0  font-extrabold mb-2 md:pb-5 capitalize text-gradient">
             Financial Services at your disposal <br />
             {/* <span className="text-orange-600">
               <Typewriter
@@ -41,7 +41,7 @@ const Hero = () => {
             Payment Service Simplified. <br />
             Remittance Untangled.
           </p>
-          <div className="w-full flex justify-center align-middle md:justify-start gap-6 mt-8">
+          <div className=" flex justify-center items-center  md:justify-start gap-6 mt-8">
             <a
               href="https://play.google.com/store/apps/details?id=com.immedi8moneymt"
               target="_blank"
@@ -51,7 +51,7 @@ const Hero = () => {
                   action: "User clicked playstore download button",
                 })
               }
-              className="block"
+              className="block ml-8 md:ml-0"
             >
               <img
                 src={android}
@@ -63,7 +63,7 @@ const Hero = () => {
             <a
               href="https://apps.apple.com/us/app/imoney-money-transfer/id6446627721"
               target="_blank"
-              className="block"
+              className="block "
               onClick={() =>
                 handleEvent({
                   category: "applestore",
@@ -74,7 +74,7 @@ const Hero = () => {
               <img
                 src={iOS}
                 alt="Download Button"
-                className="w-[190px] lg:w-[235px] mx-auto"
+                className="w-[190px] lg:w-[235px]"
               />
             </a>
           </div>
@@ -107,16 +107,20 @@ const Hero = () => {
             </div>
           </div> */}
 
-          <div className="text-white mt-[75px] w-100 flex justify-center md:justify-start align-middle gap-4">
-            <img src={people} alt="" className="w-[181.79px] h-[38px]" />
+          <div className="text-white mt-[39px] lg:mt-[50px] xl:mt-[75px] w-100 flex justify-center md:justify-start align-middle gap-4 p-8 md:p-0">
+            <img
+              src={people}
+              alt=""
+              className="w-1/2 h-[28px] md:w-[181.79px] md:h-[38px]"
+            />
             <div className="flex gap-4 align-middle">
               <div className="text-center">
-                <h4 className="text-2xl font-extrabold">345K+</h4>
-                <p className="text-sm">Active Users</p>
+                <h4 className="text-lg md:text-2xl font-extrabold">345K+</h4>
+                <p className="text-xs md:text-sm">Active Users</p>
               </div>
               <div className="text-center">
-                <h4 className="text-2xl font-extrabold">200K+</h4>
-                <p className="text-sm">Reviews</p>
+                <h4 className="text-lg md:text-2xl font-extrabold">200K+</h4>
+                <p className="text-xs md:text-sm">Reviews</p>
               </div>
             </div>
           </div>

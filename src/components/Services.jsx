@@ -19,7 +19,7 @@ const Services = () => {
       <div className="">
         <SectionHeader
           heading="Our Services you Can Use"
-          className="uppercase text-center"
+          className="uppercase text-center text-gradient"
         />
         {/* <div className="md:w-[40%] py-6 text-center md:text-start md:mr-14 md:mt-32 lg:mt-24 xxl:mt-20">
           <SectionTitle title="Our Services" />

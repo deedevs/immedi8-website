@@ -2,7 +2,7 @@ import React from "react";
 
 const PaymentMethodIcons = ({ logo }) => {
   return (
-    <div className="">
+    <div className="d-flex justify-center items-center">
       <img
         src={logo}
         alt="logo"

@@ -25,7 +25,10 @@ const Testimonial = () => {
     >
       <div className="w-3/4 mx-auto">
         <SectionTitle title="Client Opinion" />
-        <SectionHeader heading="What Users Say About Us" />
+        <SectionHeader
+          heading="What Users Say About Us"
+          className="font-bold"
+        />
       </div>
       <Swiper
         slidesPerView={"1"}

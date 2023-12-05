@@ -110,25 +110,25 @@ const Services = () => {
                 modules={[Pagination, Autoplay]}
                 className=".swiper"
               >
-                <SwiperSlide className="w-full mx-auto">
+                <SwiperSlide className="w-full mx-auto d-flex justify-center items-center my-auto ">
                   <PaymentMethodIcons logo={iPay} />
                 </SwiperSlide>
-                <SwiperSlide className="w-full mx-auto">
+                <SwiperSlide className="w-full mx-auto d-flex justify-center items-center my-auto ">
                   <PaymentMethodIcons logo={maestro} />
                 </SwiperSlide>
-                <SwiperSlide className="w-full mx-auto">
+                <SwiperSlide className="w-full mx-auto d-flex justify-center items-center my-auto ">
                   <PaymentMethodIcons logo={us} />
                 </SwiperSlide>
-                <SwiperSlide className="w-full mx-auto">
+                <SwiperSlide className="w-full mx-auto d-flex justify-center items-center my-auto ">
                   <PaymentMethodIcons logo={sofort} />
                 </SwiperSlide>
-                <SwiperSlide className="w-full mx-auto">
+                <SwiperSlide className="w-full mx-auto d-flex justify-center items-center my-auto ">
                   <PaymentMethodIcons logo={visa} />
                 </SwiperSlide>
-                <SwiperSlide className="w-full mx-auto">
+                <SwiperSlide className="w-full mx-auto d-flex justify-center items-center my-auto ">
                   <PaymentMethodIcons logo={masterCard} />
                 </SwiperSlide>
-                <SwiperSlide className="w-full mx-auto">
+                <SwiperSlide className="w-full mx-auto d-flex justify-center items-center my-auto ">
                   <PaymentMethodIcons logo={klarna} />
                 </SwiperSlide>
               </Swiper>

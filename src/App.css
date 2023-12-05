@@ -16,7 +16,15 @@
 }
 
 .text-gradient {
-  color: linear-gradient(141deg, #ff0030 23%, #ee82ee 56%, #eeed82 101%);
+  background: -webkit-linear-gradient(
+    141deg,
+    #ff0030 23%,
+    #ee82ee 56%,
+    #eeed82 101%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* color: linear-gradient(141deg, #ff0030 23%, #ee82ee 56%, #eeed82 101%); */
 }
 
 .transfer-gradient {

@@ -49,7 +49,10 @@ const FAQ = () => {
     >
       <div className="space-y-3 mb-8">
         <SectionTitle title="FAQ" />
-        <SectionHeader heading="Frequently Asked Queastions" />
+        <SectionHeader
+          heading="Frequently Asked Queastions"
+          className="font-bold"
+        />
       </div>
       <Accordion items={items} />
       {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">

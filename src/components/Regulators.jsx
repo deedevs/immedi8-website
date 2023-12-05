@@ -12,7 +12,10 @@ const Regulators = () => {
       <SectionTitle title="Regulators" className="text-center" />
       <div className="md:flex w-full justify-between items-center">
         <div className="md:w-[50%] py-6 text-center md:text-start md:mr-14 md:mt-8 lg:mt-10 xxl:mt-14 space-y-2">
-          <SectionHeader heading="Our Regulators" className="uppercase" />
+          <SectionHeader
+            heading="Our Regulators"
+            className="uppercase font-extrabold"
+          />
 
           <p className="text-[#080145]  leading-6 text-sm md:text-lg mb-4">
             Authorize By the Financial Services Authority, under the Payment

@@ -15,10 +15,10 @@ export const Download = () => {
                 Get Start
               </h4> */}
               {/* </div> */}
-              <p className="py-10 text-xl">
+              <p className="py-10 text-xl text-center md:text-left">
                 You can access our App using any of this devices.
               </p>
-              <h3 className="text-2xl lg:text-5xl font-bold text-green-700 mb-4">
+              <h3 className="text-2xl lg:text-5xl text-center md:text-left font-bold text-green-700 mb-4">
                 Get Started Now
               </h3>
               {/* <form action="#" className="w-full 2xl:w-2/3 mx-auto lg:mx-0">
