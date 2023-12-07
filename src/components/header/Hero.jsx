@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     // mt-16 md:mt-44 lg:mt-0 xl:mt-8
-    <div className="w-full h-full 2xl:px-52 xl:px-24 md:px-14 px-5 mt-16 md:mt-44 lg:mt-4 xl:mt-36">
+    <div className="w-full h-full 2xl:px-52 xl:px-24 md:px-14 px-5 mt-16 md:mt-44 lg:mt-24 xl:mt-36">
       <div className="md:flex w-full md:gap-x-8 space-y-8 md:space-y-0  ">
         <div className="relative w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
           <h2 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-[80px] lg:mt-10 2xl:mt-0  font-extrabold mb-2 md:pb-5 capitalize text-gradient">
