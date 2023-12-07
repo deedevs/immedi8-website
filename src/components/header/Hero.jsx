@@ -2,8 +2,8 @@ import React from "react";
 import android from "../../assets/googleIcon.svg";
 import iOS from "../../assets/appleIcon.svg";
 import ReactGA from "react-ga";
-// import mobileView from "../../assets/mobile-view.png";
-import mobileView from "../../assets/newHeroImg.png";
+import mobileView from "../../assets/mobile-view.png";
+// import mobileView from "../../assets/newHeroImg.png";
 
 import people from "../../assets/people.png";
 
@@ -18,9 +18,10 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full 2xl:px-52 xl:px-24 md:px-14 px-5 mt-16 md:mt-44 lg:mt-0 xl:mt-10">
-      <div className="md:flex w-full md:gap-x-8 space-y-10">
-        <div className="relative text-center md:text-left mb-4 md:mb-0">
+    // mt-16 md:mt-44 lg:mt-0 xl:mt-8
+    <div className="w-full h-full 2xl:px-52 xl:px-24 md:px-14 px-5 mt-16 md:mt-44 lg:mt-4 xl:mt-36">
+      <div className="md:flex w-full md:gap-x-8 space-y-8 md:space-y-0  ">
+        <div className="relative w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
           <h2 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-[80px] lg:mt-10 2xl:mt-0  font-extrabold mb-2 md:pb-5 capitalize text-gradient">
             Financial Services at your disposal <br />
             {/* <span className="text-orange-600">
@@ -111,7 +112,7 @@ const Hero = () => {
             <img
               src={people}
               alt=""
-              className="w-1/2 h-[28px] md:w-[181.79px] md:h-[38px]"
+              className="w-[150px] h-[28px] md:w-[181.79px] md:h-[38px]"
             />
             <div className="flex gap-4 align-middle">
               <div className="text-center">
@@ -125,11 +126,12 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="relative py-10 md:py-0 mx-auto  pt-8 md:pt-0 lg:pt-2 xl:pt-0 2xl:mt-10 screenshot">
-          <div className="absolute bottom-25 right-25 w-20 z-10 opacity-5">
+        {/*  py-10 md:py-0  pt-8 md:pt-0 lg:pt-2 xl:pt-0 2xl:mt-10 screenshot */}
+        <div className="relative w-full md:w-1/2 ">
+          <div className="absolute bottom-50 right-50 d-flex justify-center items-center w-full z-10 opacity-5">
             <svg
-              width="500"
-              height="500"
+              width="700"
+              height="700"
               viewBox="0 0 793 792"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -143,11 +145,12 @@ const Hero = () => {
               />
             </svg>
           </div>
-          <div className="w-full mx-auto mb-5 z-50">
+          {/*z-50 mx-auto mt-[-30px]  max-w-[275px] md:max-w-xs xl:max-w-[600px] */}
+          <div className="w-full h-[400px] md:h-full xl:h-[500px] mb-5 z-50">
             <img
               src={mobileView}
               alt=""
-              className="z-50 mx-auto mt-[-30px] max-w-[275px] md:max-w-xs xl:max-w-[600px]"
+              className="z-50 w-full h-full object-contain"
             />
           </div>
         </div>
