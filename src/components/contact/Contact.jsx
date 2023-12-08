@@ -1,22 +1,24 @@
 import React from "react";
-import SectionHeader from "./SectionHeader";
-import SectionParagraph from "./SectionParagraph";
-import SectionTitle from "./SectionTitle";
-import SocialLink from "./SocialLink";
+import SectionHeader from "../SectionHeader";
+import SectionParagraph from "../SectionParagraph";
+import SectionTitle from "../SectionTitle";
+import SocialLink from "../SocialLink";
 import Number from "./Number";
-import uk from "../assets/uk.png";
-import usa from "../assets/usa.png";
-import sweden from "../assets/sweden.png";
-import gambia from "../assets/gambia.png";
-import facebook from "../assets/facebook.png";
-import linkedin from "../assets/linkedin.png";
-import instagram from "../assets/instagram.png";
-import twitter from "../assets/twitter.png";
+import ContactForm from "./ContactForm";
+import Map from "../Map";
+
+import uk from "../../assets/uk.png";
+import usa from "../../assets/usa.png";
+import sweden from "../../assets/sweden.png";
+import gambia from "../../assets/gambia.png";
+
+import facebook from "../../assets/facebook.png";
+import linkedin from "../../assets/linkedin.png";
+import instagram from "../../assets/instagram.png";
+import twitter from "../../assets/twitter.png";
 // import whatsapp from "../assets/whatsapp.png";
 // import youtube from "../assets/youtube.png";
-import mail from "../assets/mail.jpg";
-import ContactForm from "./ContactForm";
-import Map from "./Map";
+import mail from "../../assets/mail.jpg";
 
 const Contact = () => {
   return (
@@ -33,9 +35,10 @@ const Contact = () => {
             <h3 className="text-lg font-semibold uppercase tracking-wider">
               Telephones
             </h3>
-            <Number icon={uk} content=" +44 (0) 800 0324 314" />
-            <Number icon={sweden} content="+46 8 40839042" />
-            <Number icon={usa} content="+1 646 661 2911 " />
+            <p></p>
+            <Number icon={gambia} content="+220 7999937" />
+            <Number icon={gambia} content="+220 3795999" />
+            <Number icon={gambia} content="+220 9595999" />
             <Number icon={gambia} content="+220 437 9917" />
           </div>
           <div className="mt-14 space-y-4">
@@ -81,7 +84,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Map />
+      {/* <Map /> */}
     </div>
   );
 };

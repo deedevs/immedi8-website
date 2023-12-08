@@ -20,7 +20,7 @@ const Header = () => {
   }, []);
   return (
     //  transition-all duration-5000 ease-in-out delay-300
-    <div className="relative w-full h-screen header-gradient">
+    <div id="Home" className="relative w-full h-screen header-gradient">
       {/* <video
         className="w-full h-screen object-cover absolute top-0 left-0"
         src={heroVid}

@@ -15,6 +15,14 @@
   background: linear-gradient(151deg, #080144 20%, #1d3baa 46%, #080144 94%);
 }
 
+.footer-gradient {
+  background: linear-gradient(
+    160deg,
+    rgba(8, 1, 68, 1) 50%,
+    rgba(35, 103, 167, 1) 100%
+  );
+}
+
 .text-gradient {
   background: -webkit-linear-gradient(
     141deg,

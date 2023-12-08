@@ -2,6 +2,7 @@ import React from "react";
 import SectionHeader from "./SectionHeader";
 import SectionTitle from "./SectionTitle";
 import regulatorsImg from "../assets/regulatorsImg.jpg";
+import cbgImg from "../assets/instantAssets/cbg.png";
 
 const Regulators = () => {
   return (
@@ -43,9 +44,9 @@ const Regulators = () => {
           className="space-y-8 w-full md:w-1/2 md:space-y-0 text-center mt-10"
         >
           <img
-            src={regulatorsImg}
+            src={cbgImg}
             alt="regulation image section"
-            className="lg:w-[80%] lg:mx-auto"
+            className="lg:w-[70%] lg:mx-auto"
           />
         </div>
       </div>

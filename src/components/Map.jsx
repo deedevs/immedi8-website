@@ -2,10 +2,10 @@ import React from "react";
 
 const Map = () => {
   return (
-    <div className="py-5">
+    <div className="py-5 rounded">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1240.8273760587006!2d0.04901304611750719!3d51.53789192181923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a64a59cdb523%3A0x2aca9b92a3349cfe!2s2%20Heigham%20Rd!5e0!3m2!1sen!2sgm!4v1679914959668!5m2!1sen!2sgm"
-        height="600"
+        src="https://www.google.com/maps/place/ZigTech/@13.4600802,-16.6856525,15z/data=!4m2!3m1!1s0x0:0x3b8bfaaf7567b1c1?sa=X&ved=2ahUKEwip2sjA3_-CAxUgTKQEHTVvCTEQ_BJ6BAg4EAA"
+        height="400"
         className="border-none w-full"
         allowFullScreen=""
         loading="lazy"

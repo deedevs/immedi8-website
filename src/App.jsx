@@ -5,9 +5,9 @@ import Header from "./components/header/Header";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
 import Products from "./components/Products";
-import Contact from "./components/Contact";
+import Contact from "./components/contact/Contact";
 import Regulators from "./components/Regulators";
-import Testimonial from "./components/Testimonial";
+import Testimonial from "./components/testimonial/Testimonial";
 import FAQ from "./components/FAQ";
 
 import AOS from "aos";

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Input from "./Input";
-import InputLabel from "./InputLabel";
+import Input from "../Input";
+import InputLabel from "../InputLabel";
 
 function ContactForm() {
   const form = useRef();

@@ -4,8 +4,8 @@ const CopyWrite = () => {
   const date = new Date().getFullYear();
 
   return (
-    <p className="text-center text-gray-300 pt-14 text-sm lg:text-base">
-      &copy; {date} Immdi8 Financial Services
+    <p className="text-center text-white text-sm lg:text-base">
+      &copy; {date} Instant Financial Services
     </p>
   );
 };
