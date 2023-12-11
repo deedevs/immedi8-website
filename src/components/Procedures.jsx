@@ -5,9 +5,9 @@ import payment from "../assets/make-payment.png";
 
 const Procedures = () => {
   return (
-    <div className="bg-[#080145] text-white 2xl:px-52 xl:px-24 md:px-14 px-5 pt-20 pb-20 h-auto ">
+    <div className="how-gradient text-white 2xl:px-52 xl:px-24 md:px-14 px-5 pt-20 pb-20 h-auto ">
       <div>
-        <h4 className="pb-5 text-2xl text-red-600 lg:text-3xl font-bold text-center">
+        <h4 className="py-10 text-2xl text-red-600 lg:text-3xl font-bold text-center">
           How We Do It
         </h4>
         <p className="text-lg text-center ">

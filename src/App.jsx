@@ -52,7 +52,7 @@ function App() {
         <Procedures />
         <WhyUs />
         <Contact />
-        <Download />
+        {/* <Download /> */}
         <Regulators />
         <FAQ />
         <Testimonial />

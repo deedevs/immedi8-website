@@ -1,9 +1,13 @@
 import React from "react";
+import qoute from "../../assets/instantAssets/qoute.png";
 
 const TestimonialCard = ({ image, name, role, comment }) => {
   return (
-    <div class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
-      <div class="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
+    <div class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-800 shadow-none">
+      <div className="absolute top-8 left-20 w-full max-w-sm z-0">
+        <img src={qoute} alt="dots" />
+      </div>
+      <div class="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-800 shadow-none">
         <img
           src={image}
           alt={name}
@@ -87,7 +91,7 @@ const TestimonialCard = ({ image, name, role, comment }) => {
           </p>
         </div>
       </div>
-      <div class="mb-6 p-0">
+      <div class="mb-6 p-0 z-10">
         <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
           "{comment}"
         </p>

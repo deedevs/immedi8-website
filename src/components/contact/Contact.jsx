@@ -24,28 +24,41 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="text-[#1c2e4a] bg-white xl:px-52 md:px-14 px-5 pt-14 pb-24"
+      className="text-white bg-[#080145] xl:px-52 md:px-14 px-5 pt-14 pb-24"
     >
       <SectionTitle title="Contact Us" className="text-center" />
-      <div className="md:flex w-full justify-between items-center">
-        <div className="md:w-[50%] pb-6 text-center md:text-start md:mr-14 md:mt-8 lg:mt-10 xxl:mt-14">
+      <div className="md:flex w-full justify-between items-center space-y-10 md:space-y-0">
+        <div className="space-y-8 w-full md:space-y-0 md:w-1/2 text-center">
+          <SectionHeader heading="" className="text-sm" />
+          <h4 className="capitalize text-2xl md:text-3xl pb-8 text-red-600 font-bold">
+            Enquiries / Contact
+          </h4>
+
+          <div className="w-full pr-0">
+            <ContactForm />
+          </div>
+        </div>
+        <div className="md:w-[50%] pb-6 text-center md:text-start md:ml-14 md:mt-8 lg:mt-10 xxl:mt-14">
           <SectionHeader heading="want to get in touch" className="font-bold" />
           <SectionParagraph content="Feel free to contact us through the following below. We will be glad to reply you." />
-          <div className="mt-14 space-y-4 text-[#080145]">
+          <div className="mt-14 space-y-4 text-white">
             <h3 className="text-lg font-semibold uppercase tracking-wider">
               Telephones
             </h3>
-            <p></p>
-            <Number icon={gambia} content="+220 7999937" />
-            <Number icon={gambia} content="+220 3795999" />
-            <Number icon={gambia} content="+220 9595999" />
-            <Number icon={gambia} content="+220 437 9917" />
+            <div className="w-full text-center md:text-left">
+              <Number icon={gambia} content="+220 7999937" />
+              <Number icon={gambia} content="+220 3795999" />
+              <Number icon={gambia} content="+220 9595999" />
+              <Number icon={gambia} content="+220 437 9917" />
+            </div>
           </div>
           <div className="mt-14 space-y-4">
             <h3 className="text-lg font-semibold uppercase tracking-wider">
               Email
             </h3>
-            <Number icon={mail} content=" Transfer@immedi8money.com" />
+            <p className="text-center md:text-clip">
+              <Number icon={mail} content=" Transfer@immedi8money.com" />
+            </p>
           </div>
           <div className="mt-14 space-y-4">
             <h3 className="text-lg font-semibold uppercase tracking-wider">
@@ -71,16 +84,6 @@ const Contact = () => {
               {/* <SocialLink img={whatsapp} url={} /> */}
               {/* <SocialLink img={youtube}url={} /> */}
             </div>
-          </div>
-        </div>
-        <div className="space-y-8 w-full md:space-y-0 md:w-1/2 text-center">
-          <SectionHeader heading="" className="text-sm" />
-          <h4 className="capitalize text-2xl md:text-3xl text-red-600 font-bold">
-            Enquiries / Contact
-          </h4>
-
-          <div className="w-full pr-0">
-            <ContactForm />
           </div>
         </div>
       </div>

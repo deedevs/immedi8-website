@@ -8,7 +8,7 @@ import secure from "../assets/secure.png";
 
 const WhyUs = () => {
   return (
-    <div className="bg-[#080145] text-white 2xl:px-52 xl:px-24 md:px-14 px-5 pt-10 pb-24 h-auto clip">
+    <div className="why-gradient text-white 2xl:px-52 xl:px-24 md:px-14 px-5 pt-24 pb-24 h-auto">
       {/* <h4 className="pb-5 text-2xl text-red-600 lg:text-3xl font-bold text-center">
         Why Choose Us
       </h4> */}

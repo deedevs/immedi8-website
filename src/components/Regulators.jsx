@@ -41,12 +41,12 @@ const Regulators = () => {
         </div>
         <div
           data-aos="slide-left"
-          className="space-y-8 w-full md:w-1/2 md:space-y-0 text-center mt-10"
+          className="space-y-8 w-full md:w-1/2 md:space-y-0 text-center mt-10 d-flex justify-center items-center"
         >
           <img
             src={cbgImg}
             alt="regulation image section"
-            className="lg:w-[70%] lg:mx-auto"
+            className="w-2/3 mx-auto lg:w-[70%] lg:mx-auto"
           />
         </div>
       </div>

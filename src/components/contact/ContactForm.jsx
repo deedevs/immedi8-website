@@ -77,10 +77,10 @@ function ContactForm() {
     <form
       ref={form}
       onSubmit={handleSubmit}
-      className="w-full bg-transparent space-y-5 shadow-md rounded p-6"
+      className="w-full bg-white space-y-5 shadow-xl shadow-slate-900 rounded p-6"
     >
       <div
-        className={`bg-green-400 text-white w-full py-3 ${
+        className={`bg-green-400 text-[#1c2e4a] w-full py-3 ${
           message ? "block" : "hidden"
         }`}
       >

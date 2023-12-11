@@ -9,7 +9,7 @@ import tranferImage from "../../assets/instantAssets/transfer2.jpg";
 
 const Transfer = () => {
   return (
-    <div className="transfer-gradient 2xl:px-52 xl:px-24 md:px-14 px-5   pb-10 h-full  relative">
+    <div className="transfer-gradient 2xl:px-52 xl:px-24 md:px-14 px-5   py-10 h-full  relative">
       <Payments className="top-[0px] md:top-[0px] left-[5%] md:left-[5%] lg:left-[5%] z-50" />
       <div className="absolute right-3 bottom-72 lg:right-20 lg:top-52 w-40">
         <img src={dots7} alt="7 dots" className="w-full opacity-20" />

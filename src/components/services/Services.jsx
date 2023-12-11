@@ -32,7 +32,7 @@ const Services = () => {
   return (
     <div
       id="Services"
-      className="bg-[#080145] text-white 2xl:px-52 xl:px-24 md:px-14 px-5 pt-14 pb-20 octa"
+      className="service-gradient text-white 2xl:px-52 xl:px-24 md:px-14 px-5 pt-14 pb-20  py-20"
     >
       {/* md:flex w-full justify-between  */}
       <div className="">

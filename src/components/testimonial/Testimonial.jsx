@@ -9,7 +9,6 @@ import user4 from "../../assets/testimonialImg3.jpg";
 import user5 from "../../assets/testimonialImg4.jpg";
 import dot5 from "../../assets/instantAssets/dots5.png";
 import dot6 from "../../assets/instantAssets/dot6.png";
-import qoute from "../../assets/instantAssets/qoute.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -30,9 +29,6 @@ const Testimonial = () => {
     >
       <div className="absolute w-full max-w-sm opacity-20">
         <img src={dot5} alt="dots" />
-      </div>
-      <div className="absolute bottom-28 right-2 w-full max-w-sm ">
-        <img src={qoute} alt="dots" />
       </div>
       <div className="w-3/4 mx-auto">
         <SectionTitle title="Client Opinion" />

@@ -38,7 +38,7 @@ const Hero = () => {
               />
             </span> */}
           </h2>
-          <p className="text-slate-400">
+          <p className="text-slate-400 md:text-xl xl:text-3xl">
             Payment Service Simplified. <br />
             Remittance Untangled.
           </p>
@@ -128,10 +128,10 @@ const Hero = () => {
         </div>
         {/*  py-10 md:py-0  pt-8 md:pt-0 lg:pt-2 xl:pt-0 2xl:mt-10 screenshot */}
         <div className="relative w-full md:w-1/2 ">
-          <div className="absolute bottom-50 right-50 d-flex justify-center items-center w-full z-10 opacity-5">
+          <div className="absolute bottom-50 right-50 d-flex justify-center items-center w-full h-full z-10 opacity-5">
             <svg
-              width="700"
-              height="700"
+              width="100%"
+              height="100%"
               viewBox="0 0 793 792"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
