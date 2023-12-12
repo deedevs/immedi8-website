@@ -16,7 +16,7 @@ import PaymentLogo from "./PaymentLogo";
 const Payments = ({ className }) => {
   return (
     <div
-      className={`bg-white text-[#080145] border-none rounded-b-lg w-[90%] md:w-[90%] lg:w-[90%] h-auto mx-auto px-8 py-6 shadow-lg z-20 shadow-[#080145] absolute ${className}`}
+      className={`bg-white text-[#080145] border-none rounded-b-lg w-[90%] md:w-[90%] lg:w-[90%] h-auto mx-auto px-8 py-3 sm:py-6 shadow-lg z-20 shadow-[#080145] absolute ${className}`}
     >
       <h4 className="pb-5 text-base md:text-2xl text-red-600 lg:text-3xl font-bold text-center">
         Meet Our Global Products
