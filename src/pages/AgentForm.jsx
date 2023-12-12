@@ -78,11 +78,11 @@ const AgentForm = () => {
     return Object.keys(errors).length === 0;
   }
   return (
-    <div className="w-full">
+    <div className="w-full 2xl:px-52 xl:px-24 md:px-14">
       <form
         ref={form}
         onSubmit={handleSubmit}
-        className="bg-transparent space-y-5 shadow-xl rounded p-6 w-[700px] mx-auto my-12"
+        className="bg-transparent space-y-5 shadow-xl rounded p-6 max-w-[700px] w-full mx-auto my-12"
       >
         <div>
           <h3 className="text-center text-3xl font-bold py-6 text-red-600">

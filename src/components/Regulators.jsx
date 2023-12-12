@@ -3,13 +3,27 @@ import SectionHeader from "./SectionHeader";
 import SectionTitle from "./SectionTitle";
 import regulatorsImg from "../assets/regulatorsImg.jpg";
 import cbgImg from "../assets/instantAssets/cbg.png";
+import dot5 from "../assets/instantAssets/dots5.png";
+import dot8 from "../assets/instantAssets/dot8.png";
 
 const Regulators = () => {
   return (
     <div
       id="Regulators"
-      className="bg-white text-[#080145] xl:px-52 md:px-14 px-5 pt-14 pb-24 clip2"
+      className="bg-white text-[#080145] xl:px-24 2xl:px-52 md:px-14 px-5 pt-14 pb-24 clip2 relative"
     >
+      <div className="absolute w-full max-w-sm opacity-20 right-1">
+        <img src={dot5} alt="dots" />
+      </div>
+      <div className="absolute w-full max-w-sm opacity-20 right-[50%] bottom-20">
+        <img src={dot5} alt="dots" />
+      </div>
+      <div className="absolute w-64 h-64 rounded-full bg-blue-200 opacity-20 right-[70%] top-20"></div>
+      <div className="absolute w-32 h-32 rounded-full bg-blue-200 opacity-20 right-5 top-96 md:right-[60%] md:top-20"></div>
+      <div className="absolute w-36 h-36 rounded-full bg-blue-200 opacity-20 md:left-10 md:bottom-20 right-20 bottom-44"></div>
+      <div className="absolute w-28 h-28 rounded-full bg-blue-200 opacity-20 left-10 top-96 rmd:ight-[45%] md:top-64"></div>
+      <div className="absolute w-20 h-20 rounded-full bg-blue-200 opacity-20 right-[35%] top-72"></div>{" "}
+      <div className="absolute w-14 h-14 rounded-full bg-blue-200 opacity-20 right-[10%] bottom-10"></div>
       <SectionTitle title="Regulators" className="text-center" />
       <div className="md:flex w-full justify-between items-center">
         <div className="md:w-[50%] py-6 text-center md:text-start md:mr-14 md:mt-8 lg:mt-10 xxl:mt-14 space-y-2">

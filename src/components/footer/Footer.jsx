@@ -24,7 +24,7 @@ const Footer = () => {
   ];
   return (
     <>
-      <div className="footer-gradient xl:px-24 md:px-14 px-5 py-16 text-white">
+      <div className="footer-gradient xl:px-24 2xl:px-52 md:px-14 px-5 py-16 text-white">
         <GoToTop />
         <div className="md:flex md:items-center md:justify-between md:gap-6 lg:gap-0 sm:px-12 px-4 bg-[#ffffff19] py-7 ">
           <p className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal md:w-2/5 font-bold text-gradient">
@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 2xl:grid-cols-5 gap-10 py-16">
           <div className="">
             <div>
-              <img src={logo} alt="logo image" />
+              <img src={logo} alt="logo image" className="w-full" />
             </div>
             <p className="pt-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis

@@ -25,11 +25,11 @@ const Testimonial = () => {
   return (
     <div
       id="Reviews"
-      className="testimonialBg bg-no-repeat bg-cover bg-center xl:px-24 md:px-14 px-5 w-full h-full pt-14 py-16 text-center relative"
+      className="testimonialBg bg-no-repeat bg-cover bg-center xl:px-24 2xl:px-52 md:px-14 px-5 w-full h-full pt-14 py-16 text-center relative"
     >
-      <div className="absolute w-full max-w-sm opacity-20">
+      {/* <div className="absolute w-full max-w-sm opacity-20">
         <img src={dot5} alt="dots" />
-      </div>
+      </div> */}
       <div className="w-3/4 mx-auto">
         <SectionTitle title="Client Opinion" />
         <SectionHeader

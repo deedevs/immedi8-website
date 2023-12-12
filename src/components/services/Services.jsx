@@ -28,11 +28,14 @@ import iPay from "../../assets/iPay.png";
 import klarna from "../../assets/klarna.jpg";
 import PaymentMethodIcons from "./PaymentMethodIcons";
 
+import circle from "../../assets/instantAssets/circle.png";
+import dots7 from "../../assets/instantAssets/dots7.png";
+
 const Services = () => {
   return (
     <div
       id="Services"
-      className="service-gradient text-white 2xl:px-52 xl:px-24 md:px-14 px-5 pt-14 pb-20  py-20"
+      className="relative service-gradient text-white 2xl:px-52 xl:px-24 md:px-14 px-5 pt-14 pb-20  py-20"
     >
       {/* md:flex w-full justify-between  */}
       <div className="">
@@ -40,6 +43,14 @@ const Services = () => {
           heading="Our Services you Can Use"
           className="uppercase text-center font-bold"
         />
+
+        <div className="absolute left-8 top-[40%] lg:right-20 lg:top-[235px] w-72 lg:w-96 z-0">
+          <img src={circle} alt="circle" className="w-full opacity-20" />
+        </div>
+        <div className="absolute left-3 bottom-0  md:left-64 md:bottom-[-70px] w-40">
+          <img src={dots7} alt="7 dots" className="w-full opacity-20" />
+        </div>
+        <div className="absolute right-3 top-[480%] md:right-0 md:top-[40%] w-[350px] h-[350px] z-0 opacity-5 rounded-full  bg-[#ccc]"></div>
 
         <div
           data-aos="flip-left"

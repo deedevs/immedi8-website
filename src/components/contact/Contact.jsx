@@ -20,12 +20,23 @@ import twitter from "../../assets/twitter.png";
 // import youtube from "../assets/youtube.png";
 import mail from "../../assets/mail.jpg";
 
+import dot8 from "../../assets/instantAssets/dot8.png";
+// import dot5 from "../../assets/instantAssets/dot5.png";
+import circle from "../../assets/instantAssets/circle.png";
+
 const Contact = () => {
   return (
     <div
       id="Contact"
-      className="text-white bg-[#080145] xl:px-52 md:px-14 px-5 pt-14 pb-24"
+      className="text-white bg-[#080145] 2xl:px-52 xl:px-24 md:px-14 px-5 pt-14 pb-24 relative"
     >
+      <div className="absolute right-4 top-[50%] lg:right-20 lg:top-[235px] w-72 lg:w-96 z-0">
+        <img src={circle} alt="circle" className="w-full opacity-20" />
+      </div>
+      <div className="absolute left-3 bottom-0  md:left-64 md:bottom-[-70px] w-96">
+        <img src={dot8} alt="7 dots" className="w-full opacity-20" />
+      </div>
+      <div className="absolute left-4 top-[65%] md:top-[40%] w-[150px] h-[150px] z-0 opacity-5 rounded-full  bg-[#ccc]"></div>
       <SectionTitle title="Contact Us" className="text-center" />
       <div className="md:flex w-full justify-between items-center space-y-10 md:space-y-0">
         <div className="space-y-8 w-full md:space-y-0 md:w-1/2 text-center">

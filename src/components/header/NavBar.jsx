@@ -99,20 +99,22 @@ const NavBar = () => {
               setMobileMenuOpen(true);
             }}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
+            {
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            }
           </button>
         </div>
       </nav>
@@ -134,11 +136,11 @@ const NavBar = () => {
             <Logo />
             <button
               type="button"
-              className="pr-3 rounded-md  text-gray-700"
+              className="mr-5 rounded-md  text-gray-700"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              {/* <XMarkIcon className="h-6 w-6" aria-hidden="true" /> */}
+
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -181,17 +183,9 @@ const NavBar = () => {
                     Become an Agent
                   </a>
                 </li>
-                {/* <li className="list-none">
-              <a
-                href="/career/post"
-                className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 cursor-pointer hover:bg-gray-300"
-              >
-                Career
-              </a>
-            </li> */}
               </div>
               <LoginBtn className="md:hidden" />
-              <TrackTransaction className="md:hidden" />
+              <TrackTransaction className="md:hidden border-none" />
             </div>
           </div>
         </Dialog.Panel>

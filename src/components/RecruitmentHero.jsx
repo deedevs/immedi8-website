@@ -4,7 +4,7 @@ import careerImg from "../assets/career.jpg";
 
 const RecruitmentHero = () => {
   return (
-    <div className="bg-gradient-to-r from-[#1c2e4a] to-red-600 lg:px-52 md:px-14 px-5 pt-8 pb-5 h-full ">
+    <div className="bg-gradient-to-r from-[#1c2e4a] to-red-600 2xl:px-52 xl:px-24 md:px-14 px-5 pt-8 pb-5 h-full ">
       <div className="md:flex w-full md:gap-x-24">
         <div className=" md:w-2/3 py-6 text-center md:text-start pt-20">
           <h2 className="text-2xl md:text-4xl lg:text-6xl text-red-600 pb-5 capitalize">
