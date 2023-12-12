@@ -6,7 +6,7 @@ const PaymentLogo = ({ logo }) => {
       <img
         src={logo}
         alt="logo"
-        className="h-[150px] w-[150px] lg:max-h-[200px] lg:max-w-[200px] mx-auto"
+        className="h-[125px] w-[125px] sm:h-[150px] sm:w-[150px] lg:max-h-[200px] lg:max-w-[200px] mx-auto"
       />
     </div>
   );
