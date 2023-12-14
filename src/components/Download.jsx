@@ -2,10 +2,11 @@ import React from "react";
 import mobile from "../assets/newHeroImg.png";
 import iOS from "../assets/appleIcon.svg";
 import android from "../assets/googleIcon.svg";
+import newImg from "../assets/mobile-view.png";
 
 export const Download = () => {
   return (
-    <div className="bg-[#080145] text-white 2xl:px-52 xl:px-24 md:px-14 px-5 pt-10 pb-24 clip3">
+    <div className="bg-[#0782BD] text-white 2xl:px-52 xl:px-24 md:px-14 px-5 pt-10 pb-24">
       <div className="lg:flex align-middle gap-12">
         <div className="lg:w-1/2 my-auto">
           <div>
@@ -15,10 +16,20 @@ export const Download = () => {
                 Get Start
               </h4> */}
               {/* </div> */}
-              <p className="py-10 text-xl text-center md:text-left">
+              <p className="py-10 text-xl text-center md:text-left text-[#080145]">
                 You can access our App using any of this devices.
               </p>
-              <h3 className="text-2xl lg:text-5xl text-center md:text-left font-bold text-green-700 mb-4">
+              <p className="mb-6">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum enim labore porro, vitae eligendi repellat nihil
+                necessitatibus fugit ipsam amet optio sint mollitia non
+                accusamus excepturi. Eius voluptate laboriosam maxime. Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Ad, autem!
+                Voluptas et aperiam odio quisquam ex laboriosam magnam animi, ea
+                maiores possimus error! Deserunt odio iste inventore cupiditate
+                quasi quos.
+              </p>
+              <h3 className="text-2xl lg:text-5xl text-center md:text-left font-bold text-[#080145] mb-4">
                 Get Started Now
               </h3>
               {/* <form action="#" className="w-full 2xl:w-2/3 mx-auto lg:mx-0">
@@ -41,7 +52,7 @@ export const Download = () => {
         </div>
         <div className="lg:w-1/2 mx-auto">
           <img
-            src={mobile}
+            src={newImg}
             alt=""
             srcSet=""
             className="w-full h-[550px] object-contain"

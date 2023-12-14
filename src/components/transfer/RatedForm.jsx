@@ -14,43 +14,61 @@ const RatesForm = () => {
 
   const data = useContext(RatesContext);
 
+  const handleChange = (e) => {
+    setAmountToSend(e.target.value);
+  };
+
+  const randomData = [
+    { currency: "UK", rate: "80" },
+    { currency: "USA", rate: "63" },
+    { currency: "SEK", rate: "43" },
+    { currency: "MAD", rate: "3.66" },
+    { currency: "XOF", rate: "0.98" },
+  ];
+
   // console.log(data && data);
 
   const calculateValue = () => {
-    let serviceFee;
-    let exchangeRate;
-    if (data) {
-      data?.data.fees.forEach((fee) => {
-        if (
-          fee.from_currency === senderCurrency &&
-          fee.to_currency === receiverCurrency
-        ) {
-          fee.fee_ranges.forEach((range) => {
-            if (amountToSend <= range.range_to) {
-              serviceFee = range.range_charges;
-              setFee(serviceFee);
-            }
-          });
-        }
-      });
+    const service_fee = 0.99;
+    const rate = 80;
+    const total_sent = service_fee + amountToSend;
+    const total_receive = amountToSend * 80;
+    setAmountToRecieve(total_receive.toFixed(2));
+    // let serviceFee;
+    // let exchangeRate;
 
-      data.data.rates.forEach((rate) => {
-        if (
-          rate.from_currency === senderCurrency &&
-          rate.to_currency === receiverCurrency
-        ) {
-          exchangeRate = rate.to_currency_rate;
-          setRate(exchangeRate);
-        }
-      });
-    }
-    if (serviceFee && exchangeRate) {
-      let result = (
-        (amountToSend - serviceFee) *
-        exchangeRate
-      ).toLocaleString();
-      result && setAmountToRecieve(result);
-    }
+    // if (data) {
+    //   data?.data.fees.forEach((fee) => {
+    //     if (
+    //       fee.from_currency === senderCurrency &&
+    //       fee.to_currency === receiverCurrency
+    //     ) {
+    //       fee.fee_ranges.forEach((range) => {
+    //         if (amountToSend <= range.range_to) {
+    //           serviceFee = range.range_charges;
+    //           setFee(serviceFee);
+    //         }
+    //       });
+    //     }
+    //   });
+
+    //   data.data.rates.forEach((rate) => {
+    //     if (
+    //       rate.from_currency === senderCurrency &&
+    //       rate.to_currency === receiverCurrency
+    //     ) {
+    //       exchangeRate = rate.to_currency_rate;
+    //       setRate(exchangeRate);
+    //     }
+    //   });
+    // }
+    // if (serviceFee && exchangeRate) {
+    //   let result = (
+    //     (amountToSend - serviceFee) *
+    //     exchangeRate
+    //   ).toLocaleString();
+    //   result && setAmountToRecieve(result);
+    // }
 
     return;
   };
@@ -80,7 +98,7 @@ const RatesForm = () => {
   };
 
   return (
-    <div className="max-w-[800px] w-full bg-white shadow-md rounded-3xl border-lime-100 p-10">
+    <div className="max-w-[800px]  w-full  bg-white shadow-md rounded-sm border-lime-100 p-10 my-auto">
       <h3 className="text-[#080145] font-bold text-3xl pb-6 text-center">
         Check Our Rates And Fees
       </h3>
@@ -93,7 +111,8 @@ const RatesForm = () => {
                 type="text"
                 value={amountToSend}
                 className="w-1/2 leading-3 p-2.5 outline-none text-black border border-gray-900"
-                onChange={handleAmountChange}
+                // onChange={handleAmountChange}
+                onChange={handleChange}
                 required
               />
               <div className="w-1/2">
@@ -104,7 +123,8 @@ const RatesForm = () => {
                   className="w-full leading-3 p-2.5 outline-none text-black"
                   onChange={handleSenderCurrencyChange}
                 >
-                  <option disabled hidden selected></option>
+                  {/* disabled hidden selected */}
+                  <option></option>
                   <option value="GBP">United Kingdom - GBP</option>
                   <option value="MAD">Morocco - MAD</option>
                   <option value="USD">United States - USD</option>
@@ -215,17 +235,19 @@ const RatesForm = () => {
                   <li>
                     Rate:
                     <span className="text-red-600">
-                      {" "}
-                      1{" " + senderCurrency + " "} = {rate} GMD
+                      {` 1 GBP = 80 GMD`}
+                      {/* {" "}
+                      1{" " + senderCurrency + " "} = {rate} GMD */}
                     </span>
                   </li>
 
                   <li>
                     Fee:
                     <span className="text-red-600">
-                      {" "}
+                      {/* {" "}
                       {fee + " "}
-                      {senderCurrency}
+                      {senderCurrency} */}
+                      {` 0.99 GBP`}
                     </span>
                   </li>
                 </div>

@@ -53,7 +53,7 @@ const Services = () => {
         <div className="absolute right-3 top-[480%] md:right-0 md:top-[40%] w-[350px] h-[350px] z-0 opacity-5 rounded-full  bg-[#ccc]"></div>
 
         <div
-          data-aos="flip-left"
+          data-aos="flip-down"
           className="w-full h-auto mt-12 p-6 border-none bg-white rounded-3xl"
         >
           <div className="w-20 h-20 mx-auto mb-3">
@@ -147,7 +147,7 @@ const Services = () => {
           </div>
         </div>
         <div
-          data-aos="flip-left"
+          data-aos="flip-up"
           className=" w-full md:grid md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-6 mt-16 space-y-8 md:space-y-0"
         >
           <ServiceCard

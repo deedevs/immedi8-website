@@ -3,6 +3,7 @@ import android from "../../assets/googleIcon.svg";
 import iOS from "../../assets/appleIcon.svg";
 import ReactGA from "react-ga";
 import mobileView from "../../assets/mobile-view.png";
+import RatesForm from "../transfer/RatedForm";
 // import mobileView from "../../assets/newHeroImg.png";
 
 import people from "../../assets/people.png";
@@ -20,9 +21,9 @@ const Hero = () => {
   return (
     // mt-16 md:mt-44 lg:mt-0 xl:mt-8
     <div className="w-full h-full 2xl:px-52 xl:px-24 md:px-14 px-5 mt-16 md:mt-44 lg:mt-24 xl:mt-36">
-      <div className="md:flex w-full md:gap-x-8 space-y-8 md:space-y-0  ">
+      <div className="md:flex w-full md:gap-x-8 2xl:gap-x-14 space-y-8 md:space-y-0  ">
         <div className="relative w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-[80px] 2xl-text-9xl lg:mt-10 2xl:mt-0  font-extrabold mb-2 md:pb-5 capitalize text-gradient">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-[80px] 2xl:text-[110px] lg:mt-10 2xl:mt-0  font-extrabold mb-2 md:pb-5 capitalize text-gradient">
             Financial Services at your disposal <br />
             {/* <span className="text-orange-600">
               <Typewriter
@@ -127,8 +128,8 @@ const Hero = () => {
           </div>
         </div>
         {/*  py-10 md:py-0  pt-8 md:pt-0 lg:pt-2 xl:pt-0 2xl:mt-10 screenshot */}
-        <div className="relative w-full md:w-1/2 ">
-          <div className="absolute bottom-50 right-50 d-flex justify-center items-center w-full h-full z-10 opacity-5">
+        <div className="relative w-full md:w-1/2 my-auto">
+          {/* <div className="absolute bottom-50 right-50 d-flex justify-center items-center w-full h-full z-10 opacity-5">
             <svg
               width="100%"
               height="100%"
@@ -144,14 +145,15 @@ const Hero = () => {
                 fill="#D9E8FF"
               />
             </svg>
-          </div>
+          </div> */}
           {/*z-50 mx-auto mt-[-30px]  max-w-[275px] md:max-w-xs xl:max-w-[600px] */}
-          <div className="w-full h-[400px] md:h-full xl:h-[500px] mb-5 z-50">
-            <img
+          <div className="w-full  mb-5 z-50 flex justify-center align-middle">
+            <RatesForm />
+            {/* <img
               src={mobileView}
               alt=""
               className="z-50 w-full h-full object-contain"
-            />
+            /> */}
           </div>
         </div>
       </div>

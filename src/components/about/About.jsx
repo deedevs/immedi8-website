@@ -12,7 +12,8 @@ const About = () => {
   return (
     <div
       id="About"
-      className="about-gradient text-white 2xl:px-52 xl:px-24 md:px-14 px-5 py-16 relative"
+      // about-gradient
+      className=" bg-[#0782BD] text-white 2xl:px-52 xl:px-24 md:px-14 px-5 py-16 relative"
     >
       <div className="absolute right-8 top-52 lg:right-20 lg:top-48 w-72 lg:w-96 z-0">
         <img src={circle} alt="circle" className="w-full opacity-20" />
